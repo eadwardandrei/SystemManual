@@ -143,3 +143,20 @@ function showToast() {
         toast.classList.remove('show');
     }, 1600);
 }
+
+/* ===============================
+   FAQ ACCORDION
+   =============================== */
+document.querySelectorAll(".faq-question").forEach(btn => {
+    btn.addEventListener("click", () => {
+        const item = btn.closest(".faq-item");
+
+        document.querySelectorAll(".faq-item").forEach(faq => {
+            if (faq !== item) {
+                faq.classList.remove("active");
+            }
+        });
+
+        item.classList.toggle("active");
+    });
+});
