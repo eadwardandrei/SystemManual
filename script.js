@@ -107,7 +107,7 @@ document.addEventListener("DOMContentLoaded", () => {
             if (!targetId.startsWith("#")) return;
 
             const targetSection = document.querySelector(targetId);
-            if (!targetSection) return;
+            if (!targetId || targetId === "#") return;
 
             e.preventDefault();
 
@@ -127,9 +127,11 @@ document.querySelectorAll('.copy-email').forEach(button => {
     button.addEventListener('click', () => {
         const email = button.dataset.email;
 
-        navigator.clipboard.writeText(email).then(() => {
-            showToast();
-        });
+        if (navigator.clipboard) {
+            navigator.clipboard.writeText(email).then(showToast);
+        } else {
+            alert("Email copied: " + email);
+        }
     });
 });
 

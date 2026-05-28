@@ -220,6 +220,11 @@ html, body {
     
 }
 
+.search-box::placeholder {
+    color: #777;
+    font-size: 12px;
+}
+
 /* ===============================
    SIDEBAR MENU STRUCTURE
    =============================== */
