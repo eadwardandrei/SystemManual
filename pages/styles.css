@@ -557,6 +557,70 @@ html, body {
     color: #ffffff;
 }
 
+.circle-icon-bolt {
+    width: 88px;
+    height: 88px;
+    margin: 0 auto 18px;
+    border-radius: 50%;
+    background: linear-gradient(
+        135deg,
+        #194739,
+        #3dcb9a
+    );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+
+.circle-icon-shield {
+    width: 88px;
+    height: 88px;
+    margin: 0 auto 18px;
+    border-radius: 50%;
+    background: linear-gradient(
+        135deg,
+        #912222,
+        #e76868
+    );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+
+.circle-icon-check {
+    width: 88px;
+    height: 88px;
+    margin: 0 auto 18px;
+    border-radius: 50%;
+    background: linear-gradient(
+        135deg,
+        #196a76,
+        #68d4e7
+    );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+
+.circle-icon-chart{
+    width: 88px;
+    height: 88px;
+    margin: 0 auto 18px;
+    border-radius: 50%;
+    background: linear-gradient(
+        135deg,
+        #896a0f,
+        #eecd57
+    );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+
 .intro-circle-card h4 {
     font-size: 15px;
     font-weight: 600;
@@ -707,23 +771,35 @@ html, body {
     font-size: 24px;
 }
 
-.box-reservation { background-color: #e6f0fa; }
-.box-reservation i { color: #0066cc; }
+.box-reservation { 
+    background-color: #e6f0fa;
+    color: #0066cc; 
+}
 
-.box-equipment { background-color: #e6f7f4; }
-.box-equipment i { color: #009688; }
+.box-equipment { 
+    background-color: #e6f7f4;
+    color: #009688;
+ } 
 
-.box-users { background-color: #f1f3fe; }
-.box-users i { color: #635bff; }
+.box-users { 
+    background-color: #f1f3fe;
+    color: #4f46e5;
+ }
 
-.box-analytics { background-color: #fff2e6; }
-.box-analytics i { color: #ff7700; }
+.box-analytics { 
+    background-color: #fff2e6; 
+    color: #ff7700;
+ }
 
-.box-tasks { background-color: #eef2ff; }
-.box-tasks i { color: #4f46e5; }
+.box-tasks { 
+    background-color: #eef2ff; 
+    color: #4f46e5;
+ }
 
-.box-settings { background-color: #f1f5f9; }
-.box-settings i { color: #475569; }
+.box-settings { 
+    background-color: #f1f5f9; 
+    color: #475569;
+ }
 
 /* ===============================
    ABOUT SECTION
