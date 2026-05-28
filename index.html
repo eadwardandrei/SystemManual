@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TechReserve Manual</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pages/styles.css">
+    <script src="https://kit.fontawesome.com/cc0199301c.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+<div class="layout">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <header class="sidebar-header">
+            <div class="sidebar-top">
+                <img src="images/TechReserve_Logo 1.png" alt="TechReserve Logo" class="logo">
+
+                <button class="sidebar-toggle" id="sidebarToggle">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+
+            <h2>
+                <span class="sidebar-text1">Tech</span><span class="sidebar-text2">Reserve</span>
+            </h2>
+
+            <div class="manual-text">SYSTEM MANUAL</div>
+        </header>
+
+        <div class="sidebar-search">
+            <input type="text" class="search-box" placeholder="Search manual...">
+        </div>
+
+        <nav class="menu">
+
+
+        <a href="#introduction" class="menu-link active">
+        <span class="menu-icon"><i class="fa-regular fa-house"></i></span>
+        <span class="menu-text">Introduction</span>
+        </a>
+
+        <a href="#capabilities" class="menu-link">
+        <span class="menu-icon"><i class="fa-solid fa-gears"></i></span>
+        <span class="menu-text">System Capabilities</span>
+        </a>
+
+        <!-- FOR USERS -->
+        <a href="#users" class="menu-link">
+            <span class="menu-icon"><i class="fa-regular fa-face-smile"></i></span>
+            <span class="menu-text">For Users</span>
+        </a>
+
+        <!-- FOR ADMINS -->
+        <a href="#admins" class="menu-link">
+            <span class="menu-icon"><i class="fa-solid fa-face-smile"></i></span>
+            <span class="menu-text">For Administrators</span>
+        </a>
+
+        <a href="#manual-guides" class="menu-link">
+            <span class="menu-icon"><i class="fa-solid fa-chalkboard"></i></span>
+            <span class="menu-text">Manual Guides</span>
+        </a>
+
+        <!-- SYSTEM MODULES -->
+        <a href="#system-modules" class="menu-link">
+            <span class="menu-icon"><i class="fa-solid fa-align-right"></i></span>
+            <span class="menu-text">System Modules</span>
+        </a>
+
+        <a href="#about" class="menu-link">
+            <span class="menu-icon"><i class="fa-solid fa-ellipsis"></i></span>
+            <span class="menu-text">About</span>
+        </a>
+
+        <a href="#account-hierarchy" class="menu-link">
+            <span class="menu-icon"><i class="fa-regular fa-circle-dot"></i></span>
+            <span class="menu-text">Account Hierarchy</span>
+        </a>
+
+        <a href="#faq" class="menu-link">
+            <span class="menu-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+            <span class="menu-text">FAQ</span>
+        </a>
+
+        <a href="#contributors" class="menu-link">
+            <span class="menu-icon"><i class="fa-regular fa-circle-question"></i></span>
+            <span class="menu-text">Contributors</span>
+        </a>
+
+    </nav>
+
+        <div class="help-box">
+            <p class="help-title">Need Help?</p>
+            <p>Email: datamstechreserve@gmail.com</p>
+        </div>
+    
+    <div class="sidebar-resizer" id="sidebarResizer"></div>
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+<main class="content">
+
+    <!-- HERO VIDEO -->
+    <section class="hero">
+        <video autoplay loop muted playsinline>
+            <source src="images/FEU Tech Loop Video.mp4" type="video/mp4">
+        </video>
+
+        <div class="hero-overlay">
+            <h1>
+                Welcome to
+                <span class="tech_text">Tech</span><span class="reserve_text">Reserve</span>.
+            </h1>
+            <p>Equipment & Venue Reservation System Manual</p>
+        </div>
+    </section>
+
+    <!-- INTRO -->
+<section id="introduction" class="intro-section">
+
+    <div class="intro-header">
+        
+        <span class="section-header">System Overview</span>
+        <p class="intro-lead">
+            TechReserve is FEU Tech’s centralized platform for managing equipment
+            and venue reservations—designed to streamline requests, approvals,
+            and resource allocation across the institution.
+        </p>
+    </div>
+
+    <div class="intro-circle-grid">
+
+        <div class="intro-circle-card">
+            <div class="circle-icon">
+                <i class="fa-solid fa-bolt"></i>
+            </div>
+            <h4>Efficient Requests</h4>
+            <p>Submit reservations quickly with guided steps and real-time tracking.</p>
+        </div>
+
+        <div class="intro-circle-card">
+            <div class="circle-icon">
+                <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <h4>Role-Based Access</h4>
+            <p>Separate interfaces for Users and Administrators ensure secure access.</p>
+        </div>
+
+        <div class="intro-circle-card">
+            <div class="circle-icon">
+                <i class="fa-solid fa-clipboard-check"></i>
+            </div>
+            <h4>Approval Workflow</h4>
+            <p>Structured approval processes maintain accountability and control.</p>
+        </div>
+
+        <div class="intro-circle-card">
+            <div class="circle-icon">
+                <i class="fa-solid fa-chart-line"></i>
+            </div>
+            <h4>Reports & Insights</h4>
+            <p>Generate analytics and summaries to support decision-making.</p>
+        </div>
+
+    </div>
+
+    <div class="intro-actions">
+    <a href="#manual-guides" class="btn-primary-intro">
+        Explore the Manual
+        <i class="fa-solid fa-book-open"></i>
+    </a>
+
+    <a href="#about" class="btn-secondary-intro">
+        Learn More
+        <i class="fa-solid fa-circle-info"></i>
+    </a>
+    </div>
+
+</section>
+
+    <section id="capabilities" class="intro-section">
+    <span class="section-header">System Capabilities</span>
+    <p class="intro-lead">
+        TechReserve provides a centralized platform that supports reservation creation,
+        approval workflows, real-time tracking, role-based access, reporting, and
+        administrative control of institutional resources.
+    </p>
+    </section>
+
+<section id="users" class="intro-section">
+    <span class="section-header">For Users</span>
+    <p class="intro-lead">
+        Users can browse available equipment and venues, submit reservation requests,
+        monitor approval status, receive notifications, and manage personal accounts
+        through a guided and intuitive interface.
+    </p>
+</section>
+
+<section id="admins" class="intro-section">
+    <span class="section-header">For Administrators</span>
+    <p class="intro-lead">
+        Administrators oversee system operations including resource management,
+        request approvals, personnel assignment, user account control, and report
+        generation to ensure efficient system governance.
+    </p>
+</section>
+
+<section id="manual-guides" class="intro-section">
+    <span class="section-header">Manual Guides</span>
+    <p class="intro-lead">
+        This section contains step-by-step guides, walkthroughs, and usage instructions
+        to help users and administrators effectively navigate and operate the
+        TechReserve system.
+    </p>
+</section>
+
+ <!-- SYSTEM MODULES -->
+<section id="system-modules" class="intro-section">
+    <span class="section-header">System Modules</span>
+
+    <div class="modules-grid">
+
+        <div class="module-card">
+            <div class="module-header">
+                <div class="icon-box box-reservation">
+                    <i class="fa-solid fa-calendar-check"></i>
+                </div>
+                <h5>Reservation Management</h5>
+            </div>
+            <p>
+                Handles the creation, viewing, approval, and status tracking of equipment
+                and venue reservations within the system.
+            </p>
+            <span class="module-tag">Core Module</span>
+        </div>
+
+        <div class="module-card">
+            <div class="module-header">
+                <div class="icon-box box-equipment">
+                    <i class="fa-solid fa-toolbox"></i>
+                </div>
+                <h5>Equipment & Venue Management</h5>
+            </div>
+            <p>
+                Allows administrators to add, edit, categorize, and monitor the availability
+                of equipment and reservable venues.
+            </p>
+            <span class="module-tag">Admin Module</span>
+        </div>
+
+        <div class="module-card">
+            <div class="module-header">
+                <div class="icon-box box-users">
+                    <i class="fa-solid fa-address-book"></i>
+                </div>
+                <h5>User & Employee Management</h5>
+            </div>
+            <p>
+                Manages user accounts, employee records, roles, permissions,
+                and account activation or deactivation.
+            </p>
+            <span class="module-tag">Access Control</span>
+        </div>
+
+        <div class="module-card">
+            <div class="module-header">
+                <div class="icon-box box-analytics">
+                    <i class="fa-solid fa-magnifying-glass-chart"></i>
+                </div>
+                <h5>Reports & Analytics</h5>
+            </div>
+            <p>
+                Generates system reports, usage analytics, and printable summaries
+                for administrative decision-making.
+            </p>
+            <span class="module-tag">Analytics</span>
+        </div>
+
+        <div class="module-card">
+            <div class="module-header">
+                <div class="icon-box box-tasks">
+                    <i class="fa-solid fa-clipboard-list"></i>
+                </div>
+                <h5>Task Assignments</h5>
+            </div>
+            <p>
+                Assigns personnel to approved reservations, tracks task status,
+                and ensures proper execution of reservation activities.
+            </p>
+            <span class="module-tag">Operations</span>
+        </div>
+
+        <div class="module-card">
+            <div class="module-header">
+                <div class="icon-box box-settings">
+                    <i class="fa-solid fa-gear"></i>
+                </div>
+                <h5>System Settings</h5>
+            </div>
+            <p>
+                Configures system preferences, reservation rules,
+                notification settings, and security options.
+            </p>
+            <span class="module-tag">Configuration</span>
+        </div>
+
+    </div>
+</section>
+
+    <section id="about" class="intro-section about-section">
+    <span class="section-header">About TechReserve</span>
+    <p class="intro-lead">
+        TechReserve is an institutional Equipment and Venue Reservation System
+        developed to support FEU Tech’s operational and academic activities.
+        It centralizes the request, approval, and management of shared resources
+        to ensure efficiency, transparency, and accountability across departments.
+    </p>
+
+    <div class="about-grid">
+
+        <div class="about-card">
+            <h4>Purpose of the System</h4>
+            <p>
+                The primary goal of TechReserve is to streamline reservation
+                workflows by replacing manual and fragmented processes with
+                a single, organized digital platform. This reduces delays,
+                prevents scheduling conflicts, and improves resource utilization.
+            </p>
+        </div>
+
+        <div class="about-card">
+            <h4>Who the System Is For</h4>
+            <p>
+                TechReserve is designed for students, faculty members,
+                and institutional staff who require access to equipment
+                and venues, as well as administrators who manage approvals,
+                assignments, and system operations.
+            </p>
+        </div>
+
+        <div class="about-card">
+            <h4>Key Design Principles</h4>
+            <ul class="about-list">
+                <li>User-friendly and guided workflows</li>
+                <li>Role-based access and security</li>
+                <li>Clear approval and tracking mechanisms</li>
+                <li>Reliable reporting and auditability</li>
+            </ul>
+        </div>
+
+        <div class="about-card">
+            <h4>System Scope</h4>
+            <p>
+                The system covers reservation submission, approval workflows,
+                resource management, personnel assignment, and report generation.
+                It is intended for internal institutional use and aligns with
+                FEU Tech’s operational policies.
+            </p>
+        </div>
+
+    </div>
+    </section>
+
+    <section id="account-hierarchy" class="intro-section">
+        <span class="section-header">Account Hierarchy</span>
+        <p class="intro-lead">
+            The system follows a role-based hierarchy consisting of Users, Administrators,
+            and System Managers, each with clearly defined access levels and permissions.
+        </p>
+    </section>
+
+    <section id="faq" class="intro-section">
+    <span class="section-header">Frequently Asked Questions</span>
+    <p class="intro-lead">
+        This section addresses common concerns regarding reservations, approvals,
+        cancellations, account access, and system limitations.
+    </p>
+    </section>
+
+    <section id="contributors" class="intro-section">
+    <span class="section-header">Contributors</span>
+    <p class="intro-lead">
+        TechReserve was developed and documented by the project team, system analysts,
+        developers, and stakeholders who contributed to its successful implementation.
+    </p>
+    </section>
+
+
+    <footer>
+        © 2026 TechReserve. All rights reserved.
+    </footer>
+
+</main>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
