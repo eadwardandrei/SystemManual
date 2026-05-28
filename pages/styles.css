@@ -749,44 +749,109 @@ html, body {
  }
 
 /* ===============================
-   ABOUT SECTION
+   REFINED ABOUT SECTION
    =============================== */
-.about-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 24px;
-    margin-top: 32px;
+
+.about-section {
+    background: linear-gradient(
+        180deg,
+        #ffffff,
+        #f6faf8
+    );
 }
 
-.about-card {
-    background: #ffffff;
-    border-radius: 18px;
-    padding: 24px;
-    border: 1px solid #eaeaea;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.04);
+.about-intro {
+    max-width: 900px;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 36px;
 }
 
-.about-card h4 {
+/* Vertical flow container */
+.about-flow {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+/* Row layout */
+.about-row {
+    display: flex;
+    gap: 22px;
+    align-items: flex-start;
+}
+
+/* Icon column */
+.about-icon {
+    width: 54px;
+    height: 54px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #fff;
+}
+
+.about-icon i {
+    font-size: 22px;
+}
+
+/* Icon themes */
+.about-icon.mission {
+    background: linear-gradient(135deg, #1f6f54, #3dcb9a);
+}
+
+.about-icon.audience {
+    background: linear-gradient(135deg, #1e40af, #60a5fa);
+}
+
+.about-icon.principles {
+    background: linear-gradient(135deg, #7c2d12, #fb923c);
+}
+
+.about-icon.scope {
+    background: linear-gradient(135deg, #374151, #9ca3af);
+}
+
+/* Text content */
+.about-content h4 {
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 700;
     color: #1f6f54;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
-.about-card p {
-    font-size: 14px;
+.about-content p {
+    font-size: 14.5px;
     color: #666;
-    line-height: 1.6;
+    line-height: 1.7;
 }
 
-.about-list {
+/* Principles list */
+.about-points {
+    margin-top: 6px;
     padding-left: 18px;
-    font-size: 14px;
+    font-size: 14.5px;
     color: #666;
 }
 
-.about-list li {
+.about-points li {
     margin-bottom: 6px;
+}
+
+/* Mobile adjustment */
+@media (max-width: 700px) {
+    .about-row {
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .about-icon {
+        width: 48px;
+        height: 48px;
+    }
 }
 
 footer {
