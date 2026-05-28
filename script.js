@@ -123,3 +123,21 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
+document.querySelectorAll('.copy-email').forEach(button => {
+    button.addEventListener('click', () => {
+        const email = button.dataset.email;
+
+        navigator.clipboard.writeText(email).then(() => {
+            showToast();
+        });
+    });
+});
+
+function showToast() {
+    const toast = document.getElementById('copy-toast');
+    toast.classList.add('show');
+
+    setTimeout(() => {
+        toast.classList.remove('show');
+    }, 1600);
+}
