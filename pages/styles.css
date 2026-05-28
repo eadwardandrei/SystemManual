@@ -541,11 +541,6 @@ html, body {
     height: 88px;
     margin: 0 auto 18px;
     border-radius: 50%;
-    background: linear-gradient(
-        135deg,
-        #194739,
-        #2c8a69
-    );
     display: flex;
     align-items: center;
     justify-content: center;
@@ -554,71 +549,23 @@ html, body {
 
 .circle-icon i {
     font-size: 34px;
-    color: #ffffff;
 }
 
+/* VARIANTS */
 .circle-icon-bolt {
-    width: 88px;
-    height: 88px;
-    margin: 0 auto 18px;
-    border-radius: 50%;
-    background: linear-gradient(
-        135deg,
-        #194739,
-        #3dcb9a
-    );
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #ffffff;
+    background: linear-gradient(135deg, #194739, #3dcb9a);
 }
 
 .circle-icon-shield {
-    width: 88px;
-    height: 88px;
-    margin: 0 auto 18px;
-    border-radius: 50%;
-    background: linear-gradient(
-        135deg,
-        #912222,
-        #e76868
-    );
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #ffffff;
+    background: linear-gradient(135deg, #912222, #e76868);
 }
 
 .circle-icon-check {
-    width: 88px;
-    height: 88px;
-    margin: 0 auto 18px;
-    border-radius: 50%;
-    background: linear-gradient(
-        135deg,
-        #196a76,
-        #68d4e7
-    );
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #ffffff;
+    background: linear-gradient(135deg, #196a76, #68d4e7);
 }
 
-.circle-icon-chart{
-    width: 88px;
-    height: 88px;
-    margin: 0 auto 18px;
-    border-radius: 50%;
-    background: linear-gradient(
-        135deg,
-        #896a0f,
-        #eecd57
-    );
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #ffffff;
+.circle-icon-chart {
+    background: linear-gradient(135deg, #896a0f, #eecd57);
 }
 
 .intro-circle-card h4 {
