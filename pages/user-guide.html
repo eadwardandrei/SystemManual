@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TechReserve Manual</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/user-guide.css">
+    <script src="https://kit.fontawesome.com/cc0199301c.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+<div class="layout">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <header class="sidebar-header">
+            <div class="sidebar-top">
+                <img src="../images/TechReserve_Logo 1.png" alt="TechReserve Logo" class="logo">
+
+                <button class="sidebar-toggle" id="sidebarToggle">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+
+            <h2>
+                <span class="sidebar-text1">Tech</span><span class="sidebar-text2">Reserve</span>
+            </h2>
+
+            <div class="manual-text">SYSTEM MANUAL</div>
+        </header>
+
+        <div class="sidebar-search">
+            <input type="text" class="search-box" placeholder="Search manual...">
+        </div>
+
+        <nav class="menu">
+
+
+        <a href="#introduction" class="menu-link">
+        <span class="menu-icon"><i class="fa-regular fa-house"></i></span>
+        <span class="menu-text">Introduction</span>
+        </a>
+
+        <a href="#capabilities" class="menu-link">
+        <span class="menu-icon"><i class="fa-solid fa-gears"></i></span>
+        <span class="menu-text">System Capabilities</span>
+        </a>
+
+        <!-- FOR USERS -->
+        <a href="#users" class="menu-link active">
+            <span class="menu-icon"><i class="fa-regular fa-face-smile"></i></span>
+            <span class="menu-text">For Users</span>
+        </a>
+
+        <!-- FOR ADMINS -->
+        <a href="#admins" class="menu-link">
+            <span class="menu-icon"><i class="fa-solid fa-face-smile"></i></span>
+            <span class="menu-text">For Administrators</span>
+        </a>
+
+        <a href="#manual-guides" class="menu-link">
+            <span class="menu-icon"><i class="fa-solid fa-chalkboard"></i></span>
+            <span class="menu-text">Manual Guides</span>
+        </a>
+
+        <!-- SYSTEM MODULES -->
+        <a href="#system-modules" class="menu-link">
+            <span class="menu-icon"><i class="fa-solid fa-align-right"></i></span>
+            <span class="menu-text">System Modules</span>
+        </a>
+
+        <a href="#about" class="menu-link">
+            <span class="menu-icon"><i class="fa-solid fa-ellipsis"></i></span>
+            <span class="menu-text">About</span>
+        </a>
+
+        <a href="#account-hierarchy" class="menu-link">
+            <span class="menu-icon"><i class="fa-regular fa-circle-dot"></i></span>
+            <span class="menu-text">Account Hierarchy</span>
+        </a>
+
+        <a href="#faq" class="menu-link">
+            <span class="menu-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+            <span class="menu-text">FAQ</span>
+        </a>
+
+        <a href="#contributors" class="menu-link">
+            <span class="menu-icon"><i class="fa-regular fa-circle-question"></i></span>
+            <span class="menu-text">Contributors</span>
+        </a>
+
+    </nav>
+
+        <div class="help-box">
+            <p class="help-title">Need Help?</p>
+            <p>Email: datamstechreserve@gmail.com</p>
+        </div>
+    
+    <div class="sidebar-resizer" id="sidebarResizer"></div>
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+<main class="content">
+
+   <!-- PAGE HERO -->
+<!-- TOP NAVIGATION -->
+<div class="page-navigation">
+
+    <button class="back-btn" onclick="history.back()">
+        <i class="fa-solid fa-arrow-left"></i>
+        Back
+    </button>
+
+    <div class="breadcrumb">
+        <a href="../index.html">Introduction</a>
+        <i class="fa-solid fa-chevron-right"></i>
+        <strong>For Users</strong>
+    </div>
+
+</div>
+
+<section class="guide-hero">
+
+    <div class="hero-shape shape-1"></div>
+    <div class="hero-shape shape-2"></div>
+
+    <div class="guide-hero-content">
+
+        <span class="guide-badge">
+            <i class="fa-solid fa-book-open"></i>
+            User Documentation
+        </span>
+
+        <h1>User Guide</h1>
+
+        <p>
+            Learn how to access, reserve, monitor, and manage system reservations
+            through TechReserve. This guide provides complete
+            instructions for users.
+        </p>
+
+        <div class="hero-stats">
+
+            <div class="hero-stat">
+                <h3>5</h3>
+                <span>User Modules</span>
+            </div>
+
+            <div class="hero-stat">
+                <h3>24/7</h3>
+                <span>System Access</span>
+            </div>
+
+            <div class="hero-stat">
+                <h3>100%</h3>
+                <span>Online Reservation</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="quick-links">
+
+    <a href="#overview">
+        <i class="fa-solid fa-circle-info"></i>
+        Overview
+    </a>
+
+    <a href="#create-account">
+        <i class="fa-solid fa-user-plus"></i>
+        Create Account
+    </a>
+
+    <a href="#role-capabilities">
+        <i class="fa-solid fa-user-gear"></i>
+        Roles
+    </a>
+
+    <a href="#workflow">
+        <i class="fa-solid fa-route"></i>
+        Workflow
+    </a>
+
+    <a href="#account-rules">
+        <i class="fa-solid fa-shield"></i>
+        Account Rules
+    </a>
+
+    <a href="#modules">
+        <i class="fa-solid fa-cubes"></i>
+        Modules
+    </a>
+
+    <a href="#rbac">
+        <i class="fa-solid fa-table"></i>
+        RBAC Matrix
+    </a>
+
+</section>
+
+<section id="overview"  class="overview-section">
+
+    <div class="section-header">
+        <span>OVERVIEW</span>
+        <h2>About TechReserve Users</h2>
+    </div>
+
+    <div class="overview-card">
+
+        <p>
+             TechReserve users include students, faculty members,
+                student officers, and other authorized personnel
+                who require access to institutional equipment, facilities, and resources.
+                Through the platform, users can conveniently submit
+                reservation requests without the need for manual paperwork.
+        </p>
+        <br>
+        <p>
+            Through a centralized reservation platform, users can easily
+            determine equipment availability, submit requests, and
+            receive updates regarding approvals and borrowing schedules.
+        </p>
+
+    </div>
+
+</section>
+
+<section id="create-account" class="account-section">
+
+    <div class="section-header">
+        <span>ACCOUNT ACCESS</span>
+        <h2>Create an Account</h2>
+    </div>
+
+    <div class="info-card">
+
+        <div class="info-icon">
+            <i class="fa-solid fa-user-plus"></i>
+        </div>
+
+        <div class="info-content">
+            <p>
+                TechReserve accounts are created using institutional
+                credentials. Users must provide accurate personal
+                information and use a valid university email address
+                during registration.
+            </p>
+
+            <p>
+                After successful registration, users may access
+                equipment reservations, reservation history,
+                notifications, and other available system services
+                based on their assigned role.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="role-capabilities" class="capabilities-section">
+
+    <div class="section-header">
+        <span>USER PERMISSIONS</span>
+        <h2>User Capabilities</h2>
+    </div>
+
+    <div class="capability-card single-capability">
+
+        <i class="fa-solid fa-user"></i>
+
+        <h3>Authorized User</h3>
+
+        <ul>
+            <li>Browse available equipment and resources</li>
+            <li>View equipment availability schedules</li>
+            <li>Submit reservation requests</li>
+            <li>Track reservation approval status</li>
+            <li>View reservation history records</li>
+            <li>Receive reservation notifications</li>
+            <li>Manage personal account information</li>
+            <li>Cancel pending reservations when permitted</li>
+        </ul>
+
+    </div>
+
+</section>
+
+<section id="workflow" class="workflow-section">
+
+<div class="section-header">
+        <span>ACCOUNT PATH</span>
+        <h2>User Workflow</h2>
+</div>
+
+<div class="workflow">
+
+    <div class="workflow-card">
+        <i class="fa-solid fa-right-to-bracket"></i>
+        <h3>Login</h3>
+    </div>
+
+    <div class="workflow-arrow">
+        <i class="fa-solid fa-arrow-right"></i>
+    </div>
+
+    <div class="workflow-card">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <h3>Browse</h3>
+    </div>
+
+    <div class="workflow-arrow">
+        <i class="fa-solid fa-arrow-right"></i>
+    </div>
+
+    <div class="workflow-card">
+        <i class="fa-solid fa-calendar-check"></i>
+        <h3>Reserve</h3>
+    </div>
+
+    <div class="workflow-arrow">
+        <i class="fa-solid fa-arrow-right"></i>
+    </div>
+
+    <div class="workflow-card">
+        <i class="fa-solid fa-circle-check"></i>
+        <h3>Approval</h3>
+    </div>
+
+</div>
+
+</section>
+
+<section id="account-rules" class="rules-section">
+
+    <div class="section-header">
+        <span>POLICIES</span>
+        <h2>Account Rules</h2>
+    </div>
+
+    <div class="rules-grid">
+
+        <div class="rule-card">
+            <i class="fa-solid fa-envelope"></i>
+            <h3>Valid Email</h3>
+            <p>
+                Users must register using an active institutional
+                email account.
+            </p>
+        </div>
+
+        <div class="rule-card">
+            <i class="fa-solid fa-lock"></i>
+            <h3>Password Security</h3>
+            <p>
+                Passwords should remain confidential and must not
+                be shared with other users.
+            </p>
+        </div>
+
+        <div class="rule-card">
+            <i class="fa-solid fa-user-check"></i>
+            <h3>Personal Responsibility</h3>
+            <p>
+                Users are responsible for all reservations made
+                under their account.
+            </p>
+        </div>
+
+        <div class="rule-card">
+            <i class="fa-solid fa-ban"></i>
+            <h3>Misuse Prevention</h3>
+            <p>
+                Providing false information or abusing reservation
+                privileges may result in account suspension.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="modules" class="modules-section">
+
+    <div class="section-header">
+        <span>FEATURES</span>
+        <h2>User Modules</h2>
+    </div>
+
+    <div class="feature-grid">
+        <div class="feature-card">
+            <i class="fa-solid fa-gauge"></i>
+            <h3>Dashboard</h3>
+            <p>
+                View reservation summaries, announcements,
+                and equipment statistics.
+            </p>
+        </div>
+
+        <div class="feature-card">
+            <i class="fa-solid fa-box"></i>
+            <h3>Equipment Catalog</h3>
+            <p>
+                Browse available laboratory equipment and
+                check availability.
+            </p>
+        </div>
+
+        <div class="feature-card">
+            <i class="fa-solid fa-calendar-days"></i>
+            <h3>Reservations</h3>
+            <p>
+                Submit and manage reservation requests.
+            </p>
+        </div>
+
+        <div class="feature-card">
+            <i class="fa-solid fa-clock-rotate-left"></i>
+            <h3>History</h3>
+            <p>
+                Review previous reservations and borrowing records.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="rbac" class="rbac-section">
+
+    <div class="section-header">
+        <span>ACCESS CONTROL</span>
+        <h2>RBAC Matrix</h2>
+    </div>
+
+    <div class="rbac-card">
+
+        <table class="rbac-table">
+
+            <thead>
+                <tr>
+                    <th>Capability</th>
+                    <th>User</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>View Equipment Catalog</td>
+                    <td>✓</td>
+                </tr>
+
+                <tr>
+                    <td>Check Availability</td>
+                    <td>✓</td>
+                </tr>
+
+                <tr>
+                    <td>Create Reservation</td>
+                    <td>✓</td>
+                </tr>
+
+                <tr>
+                    <td>Track Reservation Status</td>
+                    <td>✓</td>
+                </tr>
+
+                <tr>
+                    <td>View Reservation History</td>
+                    <td>✓</td>
+                </tr>
+
+                <tr>
+                    <td>Manage Personal Profile</td>
+                    <td>✓</td>
+                </tr>
+
+                <tr>
+                    <td>Receive Notifications</td>
+                    <td>✓</td>
+                </tr>
+
+                <tr>
+                    <td>Approve Requests</td>
+                    <td>—</td>
+                </tr>
+
+                <tr>
+                    <td>Manage Inventory</td>
+                    <td>—</td>
+                </tr>
+
+                <tr>
+                    <td>Manage User Accounts</td>
+                    <td>—</td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+<footer>
+    © 2026 TechReserve. All rights reserved.
+</footer>
+
+</main>
+
+</div>
+
+
+
+<div class="guide-progress">
+    <i class="fa-solid fa-book"></i>
+    User Guide
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
