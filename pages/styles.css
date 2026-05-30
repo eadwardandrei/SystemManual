@@ -641,6 +641,126 @@ html, body {
     }
 }
 
+/* ===============================
+   SYSTEM CAPABILITIES (REFINED)
+   =============================== */
+
+.capabilities-section {
+    background: linear-gradient(180deg, #ffffff, #f6faf8);
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.capabilities-intro {
+    max-width: 900px;
+    font-size: 16.5px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 28px;
+}
+
+/* 3-column grid */
+.capabilities-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    max-width: 900px;
+    margin: 0 auto; /* centers the grid */
+}
+
+/* Card */
+.capability-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 22px 20px;
+    border: 1px solid #e5ece8;
+    transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+.capability-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 22px rgba(0,0,0,0.07);
+}
+
+/* Icon container */
+.capability-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 16px;
+    margin-bottom: 14px;
+}
+
+/* Individual icon colors */
+.capability-card:nth-child(1) .capability-icon {
+    background: linear-gradient(135deg, #2e7d32, #66bb6a);
+}
+
+.capability-card:nth-child(2) .capability-icon {
+    background: linear-gradient(135deg, #0277bd, #4fc3f7);
+}
+
+.capability-card:nth-child(3) .capability-icon {
+    background: linear-gradient(135deg, #6a1b9a, #ba68c8);
+}
+
+.capability-card:nth-child(4) .capability-icon {
+    background: linear-gradient(135deg, #ef6c00, #ffb74d);
+}
+
+.capability-card:nth-child(5) .capability-icon {
+    background: linear-gradient(135deg, #2c387e, #7986cb);
+}
+
+.capability-card:nth-child(6) .capability-icon {
+    background: linear-gradient(135deg, #00897b, #4db6ac);
+}
+
+.capability-card:nth-child(7) .capability-icon {
+    background: linear-gradient(135deg, #c62828, #ef5350);
+}
+
+.capability-card:nth-child(8) .capability-icon {
+    background: linear-gradient(135deg, #455a64, #90a4ae);
+}
+
+/* Text */
+.capability-card h4 {
+    font-size: 14.8px;
+    font-weight: 600;
+    color: #1f6f54;
+    margin-bottom: 6px;
+}
+
+.capability-card p {
+    font-size: 13.6px;
+    color: #666;
+    line-height: 1.55;
+    margin-bottom: 14px;
+}
+
+/* Button */
+.capability-btn {
+    display: inline-block;
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-size: 12.5px;
+    font-weight: 600;
+    color: #1f6f54;
+    border: 1px solid #1f6f54;
+    text-decoration: none;
+    transition: background 0.22s ease, color 0.22s ease;
+}
+
+.capability-btn:hover {
+    background: #1f6f54;
+    color: #ffffff;
+}
+
 
 
 /* ===============================
@@ -1215,6 +1335,7 @@ html, body {
     }
 }
 
+
 /* Mobile adjustments */
 @media (max-width: 600px) {
     .faq-question {
@@ -1231,6 +1352,10 @@ html, body {
     .faq-answer p {
         font-size: 14px;
     }
+
+    .capabilities-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* Stack on mobile */
@@ -1238,6 +1363,10 @@ html, body {
     .faq-grid {
         grid-template-columns: 1fr;
         gap: 32px;
+    }
+
+    .capabilities-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
