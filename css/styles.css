@@ -1050,6 +1050,23 @@ html, body {
     transform: translateY(-2px);
 }
 
+/* Admin icon color variants (optional differentiation) */
+.step-icon.admin-login {
+    background: linear-gradient(135deg,#7c2d12,#fb923c);
+}
+
+.step-icon.admin-manage {
+    background: linear-gradient(135deg,#1e3a8a,#60a5fa);
+}
+
+.step-icon.admin-review {
+    background: linear-gradient(135deg,#065f46,#34d399);
+}
+
+.step-icon.admin-monitor {
+    background: linear-gradient(135deg,#4b5563,#9ca3af);
+}
+
 /* Mobile */
 
 @media (max-width: 700px) {
