@@ -102,23 +102,593 @@
 
 
     <!-- MAIN CONTENT -->
-<main class="content">
+    <!-- MAIN CONTENT -->
+    <main class="content">
 
         <!-- TOP NAV -->
-    <div class="page-navigation">
+        <div class="page-navigation">
+            <button class="back-btn" onclick="history.back()">
+                <i class="fa-solid fa-arrow-left"></i>
+                Back
+            </button>
 
-    <button class="back-btn" onclick="history.back()">
-        <i class="fa-solid fa-arrow-left"></i>
-        Back
-    </button>
+            <div class="breadcrumb">
+                <a href="../index.html">Introduction</a>
+                <i class="fa-solid fa-chevron-right"></i>
+                <strong>Administrator Guide</strong>
+            </div>
+        </div>
 
-    <div class="breadcrumb">
-        <a href="../index.html">Introduction</a>
-        <i class="fa-solid fa-chevron-right"></i>
-        <strong>For Administrators</strong>
+        <!-- HERO -->
+        <section class="guide-hero">
+
+            <div class="hero-shape shape-1"></div>
+            <div class="hero-shape shape-2"></div>
+
+            <div class="guide-hero-content">
+
+                <span class="guide-badge">
+                    <i class="fa-solid fa-book-open"></i>
+                    Administrator Documentation
+                </span>
+
+                <h1>Administrator Guide</h1>
+
+                <p>
+                    This guide provides system administrators with detailed
+                    instructions on managing users, approving reservations,
+                    maintaining inventory, and ensuring proper system operation
+                    within TechReserve.
+                </p>
+
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <h3>8+</h3>
+                        <span>Admin Modules</span>
+                    </div>
+                    <div class="hero-stat">
+                        <h3>24/7</h3>
+                        <span>Administrative Access</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- QUICK LINKS -->
+        <section class="quick-links">
+            <a href="#overview"><i class="fa-solid fa-circle-info"></i> Overview</a>
+            <a href="#admin-access"><i class="fa-solid fa-key"></i> Admin Access</a>
+            <a href="#role-capabilities"><i class="fa-solid fa-user-shield"></i> Roles</a>
+            <a href="#features"><i class="fa-solid fa-gears"></i> Admin Features</a>
+            <a href="#workflow"><i class="fa-solid fa-route"></i> Workflow</a>
+            <a href="#account-rules"><i class="fa-solid fa-shield"></i> Policies</a>
+            <a href="#modules"><i class="fa-solid fa-cubes"></i> Modules</a>
+            <a href="#rbac"><i class="fa-solid fa-table"></i> RBAC Matrix</a>
+        </section>
+
+        <!-- OVERVIEW -->
+        <section id="overview" class="overview-section">
+            <div class="section-header">
+                <span>OVERVIEW</span>
+                <h2>Administrator Responsibilities</h2>
+            </div>
+
+            <div class="overview-card">
+                <p>
+                    Administrators are responsible for overseeing the entire
+                    TechReserve system. Their role includes managing user accounts,
+                    monitoring reservation activities, approving or rejecting
+                    requests, and maintaining accurate equipment records.
+                </p>
+                <br>
+                <p>
+                    Proper administrative control ensures fair resource allocation,
+                    system security, and smooth operational workflows across all
+                    departments.
+                </p>
+            </div>
+        </section>
+
+        <!-- ADMIN ACCESS -->
+        <section id="admin-access" class="account-section">
+            <div class="section-header">
+                <span>ACCESS CONTROL</span>
+                <h2>Administrator Account Access</h2>
+            </div>
+
+            <div class="info-card">
+                <div class="info-icon">
+                    <i class="fa-solid fa-user-shield"></i>
+                </div>
+
+                <div class="info-content">
+                    <p>
+                        Administrator accounts are created and authorized by
+                        system owners or super administrators. Elevated privileges
+                        allow full access to management and configuration tools.
+                    </p>
+                    <p>
+                        Admin credentials must be protected to prevent unauthorized
+                        system changes or data misuse.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ROLE CAPABILITIES -->
+        <section id="role-capabilities" class="capabilities-section">
+            <div class="section-header">
+                <span>ADMIN PERMISSIONS</span>
+                <h2>Administrator Capabilities</h2>
+            </div>
+
+            <div class="capability-card single-capability">
+                <i class="fa-solid fa-user-shield"></i>
+                <h3>System Administrator</h3>
+                <ul>
+                    <li>Approve or reject reservation requests</li>
+                    <li>Manage equipment inventory</li>
+                    <li>Create, update, or deactivate user accounts</li>
+                    <li>Monitor reservation logs and history</li>
+                    <li>Configure system rules and limits</li>
+                    <li>Generate reports and summaries</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ADMIN FEATURES -->
+        <section id="features" class="guide-section">
+            <div class="section-header">
+                <span>ADMIN FEATURES</span>
+                <h2>Administrative Functional Pages</h2>
+            </div>
+
+            <div class="feature-grid">
+
+                <div class="feature-card">
+                    <div class="feature-icon register">
+                        <i class="fa-solid fa-clipboard-check"></i>
+                    </div>
+                    <h3>Reservation Management</h3>
+                    <p class="feature-goal">
+                        Review and act on reservation requests.
+                    </p>
+                    <ul>
+                        <li>Approve or reject requests</li>
+                        <li>View request details</li>
+                        <li>Track deployment status</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon equipment">
+                        <i class="fa-solid fa-boxes-stacked"></i>
+                    </div>
+                    <h3>Inventory Control</h3>
+                    <p class="feature-goal">
+                        Manage equipment and facility listings.
+                    </p>
+                    <ul>
+                        <li>Add or update equipment</li>
+                        <li>Set availability status</li>
+                        <li>Assign borrowing limits</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon profile">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+                    <h3>User Management</h3>
+                    <p class="feature-goal">
+                        Control user access and roles.
+                    </p>
+                    <ul>
+                        <li>Activate or suspend accounts</li>
+                        <li>Assign roles</li>
+                        <li>View user activity</li>
+                    </ul>
+                </div>
+
+            
+
+            <div class="feature-card">
+            <div class="feature-icon login">
+                <i class="fa-solid fa-right-to-bracket"></i>
+            </div>
+            <h3>Admin Login</h3>
+            <p>
+                Allows administrators to securely access the system using valid credentials.
+            </p>
+            <ul class="feature-list">
+                <li>Username and Password input fields</li>
+                <li>Remember Me checkbox</li>
+                <li>Sign In button</li>
+                <li>Forgot Password option</li>
+                <li>Redirect link to Student Sign-Up page</li>
+            </ul>
+    
+        </div>
+
+                <div class="feature-card">
+            <div class="feature-icon register">
+                <i class="fa-solid fa-user-plus"></i>
+            </div>
+            <h3>Add Admin Account</h3>
+            <p>
+                Enables creation of new administrator accounts through a secure modal form.
+            </p>
+            <ul class="feature-list">
+                <li>First Name and Last Name</li>
+                <li>Email Address</li>
+                <li>ID Number</li>
+                <li>Role assignment</li>
+                <li>Password & Confirm Password (with show/hide icon)</li>
+            </ul>
+        </div>
+
+                <div class="feature-card">
+            <div class="feature-icon profile">
+                <i class="fa-solid fa-id-card"></i>
+            </div>
+            <h3>Update Employee Information</h3>
+            <p>
+                Allows administrators to edit employee account details using a modal interface.
+            </p>
+            <ul class="feature-list">
+                <li>ID Number</li>
+                <li>First Name and Last Name</li>
+                <li>Email and Phone Number</li>
+                <li>Role and Account Type (Admin / Employee)</li>
+                <li>Save Changes and Cancel buttons</li>
+            </ul>
+    
+        </div>
+
+                <div class="feature-card">
+            <div class="feature-icon equipment">
+                <i class="fa-solid fa-user-graduate"></i>
+            </div>
+            <h3>Update Accepted Student</h3>
+            <p>
+                Enables administrators to manage approved student and faculty account details.
+            </p>
+            <ul class="feature-list">
+                <li>ID Number</li>
+                <li>First Name and Last Name</li>
+                <li>FIT Email Address</li>
+                <li>Role and Account Type (Student / Faculty)</li>
+                <li>Save Changes and Cancel buttons</li>
+            </ul>
+        
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-icon deployed">
+                <i class="fa-solid fa-chart-line"></i>
+            </div>
+            <h3>Administrator Dashboard</h3>
+            <p>
+                Provides a centralized overview of system activity and resource utilization.
+            </p>
+            <ul class="feature-list">
+                <li>Total Overview cards:
+                    <ul>
+                        <li>Pending Requests</li>
+                        <li>Approved Requests</li>
+                        <li>Equipment Currently Deployed</li>
+                        <li>Overdue Equipment</li>
+                    </ul>
+                </li>
+                <li>Grouped analytics:
+                    <ul>
+                        <li>Overall Equipment Utilization</li>
+                        <li>Active Users</li>
+                        <li>Average Session Time</li>
+                        <li>Facility Status Overview</li>
+                    </ul>
+                </li>
+                <li>Resource Utilization Graph</li>
+            </ul>
+        </div>
+
+        </div>
+
+        </section>
+
+ 
+
+        <!-- WORKFLOW -->
+        <section id="workflow" class="workflow-section">
+            <div class="section-header">
+                <span>PROCESS FLOW</span>
+                <h2>Administrator Workflow</h2>
+            </div>
+
+            <div class="workflow">
+                <div class="workflow-card">
+                    <i class="fa-solid fa-right-to-bracket"></i>
+                    <h3>Login</h3>
+                </div>
+
+                <div class="workflow-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+
+                <div class="workflow-card">
+                    <i class="fa-solid fa-bell"></i>
+                    <h3>Review Requests</h3>
+                </div>
+
+                <div class="workflow-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+
+                <div class="workflow-card">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <h3>Approve / Reject</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- RULES -->
+        <section id="account-rules" class="rules-section">
+            <div class="section-header">
+                <span>POLICIES</span>
+                <h2>Administrative Rules</h2>
+            </div>
+
+            <div class="rules-grid">
+                <div class="rule-card">
+                    <i class="fa-solid fa-user-lock"></i>
+                    <h3>Access Control</h3>
+                    <p>Admin credentials must not be shared.</p>
+                </div>
+
+                <div class="rule-card">
+                    <i class="fa-solid fa-scale-balanced"></i>
+                    <h3>Fair Use</h3>
+                    <p>Approvals must follow institutional policies.</p>
+                </div>
+
+                <div class="rule-card">
+                    <i class="fa-solid fa-database"></i>
+                    <h3>Data Integrity</h3>
+                    <p>System records must be kept accurate and updated.</p>
+                </div>
+
+                <div class="rule-card">
+                    <i class="fa-solid fa-triangle-exclamation"></i>
+                    <h3>Accountability</h3>
+                    <p>All admin actions are logged for auditing.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- MODULES -->
+<section id="modules" class="modules-section">
+
+    <div class="section-header">
+        <span>ADMIN MODULES</span>
+        <h2>System Modules</h2>
     </div>
 
+    <div class="feature-grid">
+
+        <!-- Dashboard -->
+        <div class="feature-card">
+            <div class="feature-icon deployed">
+                <i class="fa-solid fa-gauge"></i>
+            </div>
+            <h3>Administrative Dashboard</h3>
+            <p>
+                Provides a centralized overview of system activity
+                and operational status.
+            </p>
+            <ul>
+                <li>Reservation summaries</li>
+                <li>Pending approvals overview</li>
+                <li>Equipment utilization insights</li>
+            </ul>
+        </div>
+
+        <!-- Inventory -->
+        <div class="feature-card">
+            <div class="feature-icon register">
+                <i class="fa-solid fa-box"></i>
+            </div>
+            <h3>Inventory Management</h3>
+            <p>
+                Enables administrators to manage institutional
+                equipment and facilities.
+            </p>
+            <ul>
+                <li>Add, update, or remove equipment</li>
+                <li>Assign availability status</li>
+                <li>Maintain inventory accuracy</li>
+            </ul>
+        </div>
+
+        <!-- Reservations -->
+        <div class="feature-card">
+            <div class="feature-icon profile">
+                <i class="fa-solid fa-calendar-check"></i>
+            </div>
+            <h3>Reservation Management</h3>
+            <p>
+                Allows review and control of all reservation
+                requests submitted by users.
+            </p>
+            <ul>
+                <li>Approve or reject requests</li>
+                <li>Monitor active reservations</li>
+                <li>Track returns and completion</li>
+            </ul>
+        </div>
+
+        <!-- User Accounts -->
+        <div class="feature-card">
+            <div class="feature-icon equipment">
+                <i class="fa-solid fa-users"></i>
+            </div>
+            <h3>User Account Management</h3>
+            <p>
+                Manages user access and maintains system security.
+            </p>
+            <ul>
+                <li>Create and edit user accounts</li>
+                <li>Assign roles and permissions</li>
+                <li>Deactivate or suspend accounts</li>
+            </ul>
+        </div>
+
+        <!-- Reports -->
+        <div class="feature-card">
+            <div class="feature-icon login">
+                <i class="fa-solid fa-chart-column"></i>
+            </div>
+            <h3>Reports & Analytics</h3>
+            <p>
+                Generates system reports for monitoring and
+                decision-making purposes.
+            </p>
+            <ul>
+                <li>Reservation history reports</li>
+                <li>Usage and demand analytics</li>
+                <li>Exportable report data</li>
+            </ul>
+        </div>
+
+        <!-- Audit Logs -->
+        <div class="feature-card">
+            <div class="feature-icon reports">
+                <i class="fa-solid fa-clipboard-list"></i>
+            </div>
+            <h3>Audit Logs</h3>
+            <p>
+                Tracks system activities to ensure accountability
+                and traceability.
+            </p>
+            <ul>
+                <li>User action logs</li>
+                <li>Reservation status changes</li>
+                <li>Administrative activity records</li>
+            </ul>
+        </div>
+
+        <!-- Notifications -->
+        <div class="feature-card">
+            <div class="feature-icon audit">
+                <i class="fa-solid fa-bell"></i>
+            </div>
+            <h3>Notification Management</h3>
+            <p>
+                Controls system-generated notifications and alerts.
+            </p>
+            <ul>
+                <li>Approval and rejection alerts</li>
+                <li>System announcements</li>
+                <li>Reservation reminders</li>
+            </ul>
+        </div>
+
+        <!-- System Settings -->
+        <div class="feature-card">
+            <div class="feature-icon notifications">
+                <i class="fa-solid fa-sliders"></i>
+            </div>
+            <h3>System Configuration</h3>
+            <p>
+                Manages global system settings and operational rules.
+            </p>
+            <ul>
+                <li>Reservation limits and policies</li>
+                <li>Role-based access control settings</li>
+                <li>System preferences and parameters</li>
+            </ul>
+        </div>
+
     </div>
+
+</section>
+
+        <!-- RBAC -->
+<section id="rbac" class="rbac-section">
+    <div class="section-header">
+        <span>ACCESS CONTROL</span>
+        <h2>Role-Based Access Control (RBAC)</h2>
+    </div>
+
+    <div class="rbac-card">
+        <table class="rbac-table">
+            <thead>
+                <tr>
+                    <th>Capability</th>
+                    <th>Description</th>
+                    <th>Administrator</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                <!-- Reservation Control -->
+                
+                <tr>
+                    <td>Approve / Reject Reservations</td>
+                    <td>Review and decide on reservation requests</td>
+                    <td><i class="fa-solid fa-check rbac-yes"></i></td>
+                </tr>
+                <tr>
+                    <td>View Active Reservations</td>
+                    <td>Monitor currently deployed resources</td>
+                    <td><i class="fa-solid fa-check rbac-yes"></i></td>
+                </tr>
+
+                <!-- Inventory Control -->
+                
+                <tr>
+                    <td>Add / Edit Equipment</td>
+                    <td>Create or update equipment and facilities</td>
+                    <td><i class="fa-solid fa-check rbac-yes"></i></td>
+                </tr>
+                <tr>
+                    <td>Update Availability Status</td>
+                    <td>Set equipment as available, unavailable, or deployed</td>
+                    <td><i class="fa-solid fa-check rbac-yes"></i></td>
+                </tr>
+
+                <!-- User Management -->
+                
+                <tr>
+                    <td>Create Admin Accounts</td>
+                    <td>Add new administrator accounts</td>
+                    <td><i class="fa-solid fa-check rbac-yes"></i></td>
+                </tr>
+                <tr>
+                    <td>Update User Information</td>
+                    <td>Edit student, faculty, or employee profiles</td>
+                    <td><i class="fa-solid fa-check rbac-yes"></i></td>
+                </tr>
+                <tr>
+                    <td>Activate / Deactivate Accounts</td>
+                    <td>Control account access and status</td>
+                    <td><i class="fa-solid fa-check rbac-yes"></i></td>
+                </tr>
+
+                <!-- System & Reports -->
+                
+                <tr>
+                    <td>View Reports & Analytics</td>
+                    <td>Access system usage and performance reports</td>
+                    <td><i class="fa-solid fa-check rbac-yes"></i></td>
+                </tr>
+                <tr>
+                    <td>Modify System Rules</td>
+                    <td>Adjust reservation policies and system settings</td>
+                    <td><i class="fa-solid fa-check rbac-yes"></i></td>
+                </tr>
+
+            </tbody>
+        </table>
+
+    </div>
+</section>
 
         <footer>
             © 2026 TechReserve. All rights reserved.
