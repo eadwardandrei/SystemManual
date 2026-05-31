@@ -39,7 +39,7 @@ html, body {
         rgba(12, 42, 34, 0.91),
         rgba(21, 74, 55, 0.89)
     ), 
-    url('/images/FEU Tech Background.png');
+    url('../images/FEU Tech Background.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
