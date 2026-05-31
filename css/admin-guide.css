@@ -280,6 +280,48 @@ body {
     background: rgba(255, 255, 255, 0.15);
 }
 
+/* ==========================
+   TOP NAVIGATION
+========================== */
+
+.page-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+}
+
+.back-btn {
+    border: none;
+    background: white;
+    padding: 12px 18px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(0,0,0,.06);
+}
+
+.back-btn:hover {
+    transform: translateY(-2px);
+    background: #1f6f54;
+    color: white;
+}
+
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #777;
+    font-size: 14px;
+}
+
+.breadcrumb a {
+    color: #1f6f54;
+    text-decoration: none;
+}
+
+
+
 /* ===============================
    MAIN CONTENT
    =============================== */
