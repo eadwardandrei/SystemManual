@@ -430,24 +430,7 @@ body {
     margin-bottom: 70px;
 }
 
-.workflow-card {
-    background: white;
 
-    width: 190px;
-
-    padding: 30px;
-
-    text-align: center;
-
-    border-radius: 20px;
-
-    border: 1px solid #edf1ef;
-
-    transition: .3s ease;
-
-    box-shadow:
-    0 6px 20px rgba(0,0,0,.04);
-}
 
 .workflow-card:hover {
     transform: translateY(-8px);
@@ -456,24 +439,7 @@ body {
     0 18px 35px rgba(0,0,0,.08);
 }
 
-.workflow-card i {
-    width: 70px;
-    height: 70px;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    margin: 0 auto 18px;
-
-    border-radius: 18px;
-
-    background: #eef8f3;
-
-    color: #1f6f54;
-
-    font-size: 28px;
-}
 
 .overview-card,
 .info-card,
@@ -1164,6 +1130,8 @@ footer {
     border-radius: 20px;
 }
 
+.text-green { color: #16a34a; /* Accessible, rich green */ font-weight: 600; /* Makes the colored text pop */ } 
+.text-red { color: #dc2626; /* Accessible, bright red */ font-weight: 600; /* Makes the colored text pop */ }
 
 /* Grid */
 
