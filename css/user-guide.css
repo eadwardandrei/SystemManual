@@ -1194,3 +1194,21 @@ footer {
 .feature-icon.login {
     background: linear-gradient(135deg,#1f6f54,#3dcb9a);
 }
+
+
+/* ==================================
+   LOCK ACTIVE SIDEBAR ITEM (USER GUIDE)
+================================== */
+
+.user-guide-page .menu-link {
+    background: transparent;
+}
+
+.user-guide-page .menu-link[href="#users"] {
+    background-color: #1f6f54;
+    color: #fff;
+}
+
+.user-guide-page .menu-link[href="#users"] .menu-icon {
+    color: #fff;
+}
