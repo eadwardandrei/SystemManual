@@ -884,6 +884,32 @@ footer {
     font-size: 20px;
 }
 
+.steps-section {
+    margin-bottom: 70px;
+}
+
+/* Timeline text sizing */
+.timeline-content h3 {
+    font-size: 0.95rem;      /* smaller heading */
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.timeline-content p {
+    font-size: 0.85rem;      /* smaller body text */
+    line-height: 1.5;
+    color: #555;
+}
+
+.timeline-number {
+    width: 32px;
+    height: 32px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+
+
 /* ==================================
    ACCOUNT & ACCESS SECTIONS
 ================================== */
