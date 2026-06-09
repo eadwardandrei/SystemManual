@@ -37,7 +37,7 @@
         <nav class="menu">
 
 
-        <a href="#introduction" class="menu-link">
+        <a href="../index.html" class="menu-link">
         <span class="menu-icon"><i class="fa-regular fa-house"></i></span>
         <span class="menu-text">Introduction</span>
         </a>
@@ -48,7 +48,7 @@
         </a>
 
         <!-- FOR USERS -->
-        <a href="#users" class="menu-link">
+        <a href="../pages/user-guide.html" class="menu-link">
             <span class="menu-icon"><i class="fa-regular fa-face-smile"></i></span>
             <span class="menu-text">For Users</span>
         </a>
@@ -190,6 +190,8 @@
             </div>
         </section>
 
+        
+
         <!-- ADMIN ACCESS -->
         <section id="admin-access" class="account-section">
             <div class="section-header">
@@ -237,165 +239,180 @@
             </div>
         </section>
 
-        <!-- ADMIN FEATURES -->
-        <section id="features" class="guide-section">
-            <div class="section-header">
-                <span>ADMIN FEATURES</span>
-                <h2>Administrative Functional Pages</h2>
-            </div>
+<!-- ADMIN FEATURES -->
+<section id="features" class="guide-section">
+    <div class="section-header">
+        <span>ADMIN FEATURES</span>
+        <h2>Administrative Functionalities</h2>
+    </div>
 
-            <div class="feature-grid">
+    <div class="feature-grid">
 
-                <div class="feature-card">
-                    <div class="feature-icon register">
-                        <i class="fa-solid fa-clipboard-check"></i>
-                    </div>
-                    <h3>Reservation Management</h3>
-                    <p class="feature-goal">
-                        Review and act on reservation requests.
-                    </p>
-                    <ul>
-                        <li>Approve or reject requests</li>
-                        <li>View request details</li>
-                        <li>Track deployment status</li>
-                    </ul>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon equipment">
-                        <i class="fa-solid fa-boxes-stacked"></i>
-                    </div>
-                    <h3>Inventory Control</h3>
-                    <p class="feature-goal">
-                        Manage equipment and facility listings.
-                    </p>
-                    <ul>
-                        <li>Add or update equipment</li>
-                        <li>Set availability status</li>
-                        <li>Assign borrowing limits</li>
-                    </ul>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon profile">
-                        <i class="fa-solid fa-users"></i>
-                    </div>
-                    <h3>User Management</h3>
-                    <p class="feature-goal">
-                        Control user access and roles.
-                    </p>
-                    <ul>
-                        <li>Activate or suspend accounts</li>
-                        <li>Assign roles</li>
-                        <li>View user activity</li>
-                    </ul>
-                </div>
-
-            
-
-            <div class="feature-card">
-            <div class="feature-icon login">
-                <i class="fa-solid fa-right-to-bracket"></i>
-            </div>
-            <h3>Admin Login</h3>
-            <p>
-                Allows administrators to securely access the system using valid credentials.
-            </p>
-            <ul class="feature-list">
-                <li>Username and Password input fields</li>
-                <li>Remember Me checkbox</li>
-                <li>Sign In button</li>
-                <li>Forgot Password option</li>
-                <li>Redirect link to Student Sign-Up page</li>
-            </ul>
-    
-        </div>
-
-                <div class="feature-card">
-            <div class="feature-icon register">
-                <i class="fa-solid fa-user-plus"></i>
-            </div>
-            <h3>Add Admin Account</h3>
-            <p>
-                Enables creation of new administrator accounts through a secure modal form.
-            </p>
-            <ul class="feature-list">
-                <li>First Name and Last Name</li>
-                <li>Email Address</li>
-                <li>ID Number</li>
-                <li>Role assignment</li>
-                <li>Password & Confirm Password (with show/hide icon)</li>
-            </ul>
-        </div>
-
-                <div class="feature-card">
-            <div class="feature-icon profile">
-                <i class="fa-solid fa-id-card"></i>
-            </div>
-            <h3>Update Employee Information</h3>
-            <p>
-                Allows administrators to edit employee account details using a modal interface.
-            </p>
-            <ul class="feature-list">
-                <li>ID Number</li>
-                <li>First Name and Last Name</li>
-                <li>Email and Phone Number</li>
-                <li>Role and Account Type (Admin / Employee)</li>
-                <li>Save Changes and Cancel buttons</li>
-            </ul>
-    
-        </div>
-
-                <div class="feature-card">
-            <div class="feature-icon equipment">
-                <i class="fa-solid fa-user-graduate"></i>
-            </div>
-            <h3>Update Accepted Student</h3>
-            <p>
-                Enables administrators to manage approved student and faculty account details.
-            </p>
-            <ul class="feature-list">
-                <li>ID Number</li>
-                <li>First Name and Last Name</li>
-                <li>FIT Email Address</li>
-                <li>Role and Account Type (Student / Faculty)</li>
-                <li>Save Changes and Cancel buttons</li>
-            </ul>
-        
-        </div>
-
+        <!-- Administrator Dashboard -->
         <div class="feature-card">
             <div class="feature-icon deployed">
                 <i class="fa-solid fa-chart-line"></i>
             </div>
             <h3>Administrator Dashboard</h3>
-            <p>
-                Provides a centralized overview of system activity and resource utilization.
+            <p class="feature-goal">
+                Centralized overview of system operations and analytics.
             </p>
             <ul class="feature-list">
-                <li>Total Overview cards:
-                    <ul>
-                        <li>Pending Requests</li>
-                        <li>Approved Requests</li>
-                        <li>Equipment Currently Deployed</li>
-                        <li>Overdue Equipment</li>
-                    </ul>
-                </li>
-                <li>Grouped analytics:
-                    <ul>
-                        <li>Overall Equipment Utilization</li>
-                        <li>Active Users</li>
-                        <li>Average Session Time</li>
-                        <li>Facility Status Overview</li>
-                    </ul>
-                </li>
-                <li>Resource Utilization Graph</li>
+                <li>Overview cards for pending, approved, deployed, and overdue requests</li>
+                <li>Equipment and facility utilization analytics</li>
+                <li>Active users and borrower activity overview</li>
+                <li>Resource utilization graphs</li>
             </ul>
         </div>
 
+        <!-- Reservation & Request Management -->
+        <div class="feature-card">
+            <div class="feature-icon register">
+                <i class="fa-solid fa-clipboard-check"></i>
+            </div>
+            <h3>Reservation & Request Management</h3>
+            <p class="feature-goal">
+                Manage and process all facility and equipment reservations.
+            </p>
+            <ul>
+                <li>Approve or reject reservation requests</li>
+                <li>View complete request and schedule details</li>
+                <li>Track deployment, return, and completion status</li>
+            </ul>
         </div>
 
-        </section>
+        <!-- Inventory & Facilities Management -->
+        <div class="feature-card">
+            <div class="feature-icon equipment">
+                <i class="fa-solid fa-boxes-stacked"></i>
+            </div>
+            <h3>Inventory & Facilities Management</h3>
+            <p class="feature-goal">
+                Maintain accurate records of venues and equipment.
+            </p>
+            <ul>
+                <li>Add, edit, disable, and monitor equipment</li>
+                <li>Manage venue availability and capacity</li>
+                <li>Assign borrowing limits and quantities</li>
+            </ul>
+        </div>
+
+        <!-- User & Account Management -->
+        <div class="feature-card">
+            <div class="feature-icon profile">
+                <i class="fa-solid fa-users"></i>
+            </div>
+            <h3>User & Account Management</h3>
+            <p class="feature-goal">
+                Control system access and manage user roles.
+            </p>
+            <ul>
+                <li>Activate, suspend, or reactivate user accounts</li>
+                <li>Assign roles (Admin, Employee, Borrower – Student / Faculty)</li>
+                <li>Monitor user and borrower activity</li>
+            </ul>
+        </div>
+
+        <!-- Admin Authentication -->
+        <div class="feature-card">
+            <div class="feature-icon login">
+                <i class="fa-solid fa-right-to-bracket"></i>
+            </div>
+            <h3>Administrator Authentication</h3>
+            <p>
+                Secure administrator access to the system.
+            </p>
+            <ul class="feature-list">
+                <li>Username and password authentication</li>
+                <li>Remember Me functionality</li>
+                <li>Forgot Password recovery</li>
+                <li>Redirect option to User Sign-Up</li>
+            </ul>
+        </div>
+
+        <!-- Admin & Employee Account Setup -->
+        <div class="feature-card">
+            <div class="feature-icon register">
+                <i class="fa-solid fa-user-plus"></i>
+            </div>
+            <h3>Admin & Employee Account Setup</h3>
+            <p>
+                Create and update administrator and employee accounts.
+            </p>
+            <ul class="feature-list">
+                <li>Create new admin or employee accounts</li>
+                <li>Update personal, role, and contact information</li>
+                <li>Password management with visibility controls</li>
+            </ul>
+        </div>
+
+        <!-- Borrower Account Verification & Approval -->
+        <div class="feature-card">
+            <div class="feature-icon profile">
+                <i class="fa-solid fa-user-check"></i>
+            </div>
+            <h3>Borrower Account Verification & Approval</h3>
+            <p>
+                Review and manage borrower account requests.
+            </p>
+            <ul class="feature-list">
+                <li>View pending borrower applications</li>
+                <li>Verify or deny applications via modal interface</li>
+                <li>Manage approved borrower accounts</li>
+            </ul>
+        </div>
+
+        <!-- Authorized Borrowers Management -->
+        <div class="feature-card">
+            <div class="feature-icon profile">
+                <i class="fa-solid fa-table-list"></i>
+            </div>
+            <h3>Authorized Borrowers Management</h3>
+            <p>
+                Maintain the list of users authorized to reserve and borrow resources.
+            </p>
+            <ul class="feature-list">
+                <li>Chronologically ordered borrower records</li>
+                <li>ID Number, Name, Role, and Account Status</li>
+                <li>Search, filter, sort, activate, or disable accounts</li>
+            </ul>
+        </div>
+
+        <!-- Notifications & System Alerts -->
+        <div class="feature-card">
+            <div class="feature-icon deployed">
+                <i class="fa-solid fa-bell"></i>
+            </div>
+            <h3>Notifications & System Alerts</h3>
+            <p>
+                Monitor important system updates and reservation alerts.
+            </p>
+            <ul class="feature-list">
+                <li>View real-time notifications</li>
+                <li>Mark notifications as read or unread</li>
+                <li>Filter notifications by category</li>
+                <li>Access full notification history</li>
+            </ul>
+        </div>
+
+        <!-- Invite & Registration Tracking -->
+        <div class="feature-card">
+            <div class="feature-icon register">
+                <i class="fa-solid fa-envelope-open-text"></i>
+            </div>
+            <h3>Invite & Registration Tracking</h3>
+            <p>
+                Track invited users and registration status.
+            </p>
+            <ul class="feature-list">
+                <li>View accepted invitation details</li>
+                <li>Monitor invite expiration and status</li>
+                <li>Review registered borrower information</li>
+            </ul>
+        </div>
+
+    </div>
+</section>
 
  
 

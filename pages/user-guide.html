@@ -54,7 +54,7 @@
         </a>
 
         <!-- FOR ADMINS -->
-        <a href="#admins" class="menu-link">
+        <a href="../pages/admin-guide.html" class="menu-link">
             <span class="menu-icon"><i class="fa-solid fa-face-smile"></i></span>
             <span class="menu-text">For Administrators</span>
         </a>
@@ -274,109 +274,57 @@
 
     <div class="section-header">
         <span>USER FEATURES</span>
-        <h2>User Functional Pages</h2>
+        <h2>User Functionalities</h2>
     </div>
 
     <div class="feature-grid">
 
-        <!-- Active Reservations -->
+        <!-- User Authentication -->
         <div class="feature-card">
-            <div class="feature-icon deployed">
-                <i class="fa-solid fa-table-list"></i>
+            <div class="feature-icon login">
+                <i class="fa-solid fa-right-to-bracket"></i>
             </div>
-            <h3>View Active Reservations</h3>
+            <h3>User Authentication</h3>
             <p class="feature-goal">
-                Allows users to view all active and deployed reservations.
+                Secure access to the TechReserve system.
             </p>
-            <ul>
-                <li>Search & sorting functions</li>
-                <li>Table-based reservation list</li>
-                <li>Includes facility image & schedule</li>
-                <li>Go Back navigation button</li>
+            <ul class="feature-list">
+                <li>Username and password login</li>
+                <li>Remember Me option</li>
+                <li>Forgot Password recovery</li>
+                <li>Redirect to account registration</li>
             </ul>
-            
         </div>
 
-        <!-- Registration -->
+        <!-- User Registration -->
         <div class="feature-card">
             <div class="feature-icon register">
                 <i class="fa-solid fa-user-plus"></i>
             </div>
             <h3>User Registration</h3>
             <p class="feature-goal">
-                Enables students and faculty to create a TechReserve account.
+                Create a borrower account for students and faculty.
             </p>
-            <ul>
+            <ul class="feature-list">
                 <li>FIT email validation</li>
-                <li>Role selection: Student / Faculty</li>
-                <li>Consent checkbox required</li>
-                <li>Password confirmation</li>
+                <li>Role selection: Student or Faculty</li>
+                <li>Password and confirmation fields</li>
+                <li>Consent checkbox requirement</li>
                 <li>Register action button</li>
             </ul>
         </div>
 
-        <!-- Profile Settings -->
-        <div class="feature-card">
-            <div class="feature-icon profile">
-                <i class="fa-solid fa-id-card"></i>
-            </div>
-            <h3>Profile & Account Settings</h3>
-            <p class="feature-goal">
-                Allows users to view and update account information.
-            </p>
-            <ul>
-                <li>Profile photo upload</li>
-                <li>Account, Security & Preferences tabs</li>
-                <li>Editable user details</li>
-                <li>Save Changes functionality</li>
-            </ul>
-        </div>
-
-        <!-- Equipment -->
-        <div class="feature-card">
-            <div class="feature-icon equipment">
-                <i class="fa-solid fa-boxes-stacked"></i>
-            </div>
-            <h3>View Available Equipment</h3>
-            <p class="feature-goal">
-                Displays all equipment and venue availability.
-            </p>
-            <ul>
-                <li>Card-based equipment display</li>
-                <li>Availability filtering</li>
-                <li><span class="text-green">Green</span> = Available</li>
-                <li><span class="text-red">Red</span> = Unavailable</li>
-            </ul>
-        </div>
-
-        <!-- Login -->
-        <div class="feature-card">
-            <div class="feature-icon login">
-                <i class="fa-solid fa-right-to-bracket"></i>
-            </div>
-            <h3>User Login</h3>
-            <p class="feature-goal">
-                Secure authentication for system access.
-            </p>
-            <ul>
-                <li>Username & password fields</li>
-                <li>Remember Me option</li>
-                <li>Forgot password link</li>
-                <li>Redirect to registration</li>
-            </ul>
-        </div>
-
-         <!-- USER DASHBOARD -->
+        <!-- User Dashboard -->
         <div class="feature-card">
             <div class="feature-icon deployed">
                 <i class="fa-solid fa-gauge-high"></i>
             </div>
             <h3>User Dashboard</h3>
             <p class="feature-goal">
-                Provides quick access to reservation activity and system status.
+                Central hub for monitoring reservation activity.
             </p>
             <ul class="feature-list">
-                <li>Stat cards display:
+                <li>Status cards:
                     <ul>
                         <li>Active Reservations</li>
                         <li>Approved Requests</li>
@@ -384,7 +332,7 @@
                         <li>Completed Reservations</li>
                     </ul>
                 </li>
-                <li>Quick action button:
+                <li>Quick action:
                     <ul>
                         <li>Create New Reservation</li>
                     </ul>
@@ -392,30 +340,20 @@
             </ul>
         </div>
 
-        <!-- VIEW AVAILABLE VENUES -->
+        <!-- Resource Discovery -->
         <div class="feature-card">
             <div class="feature-icon equipment">
-                <i class="fa-solid fa-building"></i>
+                <i class="fa-solid fa-boxes-stacked"></i>
             </div>
-            <h3>View Available Venues</h3>
+            <h3>Resource Discovery</h3>
             <p class="feature-goal">
-                Allows users to browse and filter institutional venues.
+                Browse available equipment and venues.
             </p>
             <ul class="feature-list">
-                <li>Gallery (card) display of venues</li>
-                <li>Filtering options:
-                    <ul>
-                        <li>All</li>
-                        <li>Available</li>
-                        <li>Unavailable</li>
-                    </ul>
-                </li>
-                <li>Sorting & ordering:
-                    <ul>
-                        <li>A–Z and Z–A (venue name)</li>
-                    </ul>
-                </li>
-                <li>Availability indicators:
+                <li>Card-based gallery view</li>
+                <li>Filter by availability</li>
+                <li>Sorting and ordering options</li>
+                <li>Status indicators:
                     <ul>
                         <li><span class="text-green">Green</span> = Available</li>
                         <li><span class="text-red">Red</span> = Unavailable</li>
@@ -424,29 +362,71 @@
             </ul>
         </div>
 
-        <!-- RESERVATION HISTORY -->
+        <!-- Venue Browsing -->
+        <div class="feature-card">
+            <div class="feature-icon equipment">
+                <i class="fa-solid fa-building"></i>
+            </div>
+            <h3>Venue Browsing</h3>
+            <p class="feature-goal">
+                View and filter institutional venues.
+            </p>
+            <ul class="feature-list">
+                <li>Gallery (card) layout</li>
+                <li>Filtering:
+                    <ul>
+                        <li>All</li>
+                        <li>Available</li>
+                        <li>Unavailable</li>
+                    </ul>
+                </li>
+                <li>Sorting:
+                    <ul>
+                        <li>A–Z and Z–A (venue name)</li>
+                    </ul>
+                </li>
+                <li>Visual availability labels</li>
+            </ul>
+        </div>
+
+        <!-- Active Reservations -->
+        <div class="feature-card">
+            <div class="feature-icon deployed">
+                <i class="fa-solid fa-table-list"></i>
+            </div>
+            <h3>Active Reservations</h3>
+            <p class="feature-goal">
+                Monitor currently active and deployed reservations.
+            </p>
+            <ul class="feature-list">
+                <li>Table-based reservation display</li>
+                <li>Search and sorting functions</li>
+                <li>Facility images and schedule details</li>
+                <li>Go Back navigation button</li>
+            </ul>
+        </div>
+
+        <!-- Reservation History -->
         <div class="feature-card">
             <div class="feature-icon profile">
                 <i class="fa-solid fa-clock-rotate-left"></i>
             </div>
             <h3>Reservation History</h3>
             <p class="feature-goal">
-                Enables users to review all past reservation records.
+                Review completed and past reservation records.
             </p>
             <ul class="feature-list">
-                <li>Displayed in table format containing:
+                <li>Table format with:
                     <ul>
                         <li>Reservation ID</li>
-                        <li>User Name</li>
-                        <li>Role</li>
-                        <li>Requested Date & Needed Date</li>
-                        <li>Facility name and image</li>
-                        <li>Quantity</li>
+                        <li>User Name and Role</li>
+                        <li>Requested & needed dates</li>
+                        <li>Facility details and quantity</li>
                         <li>Type: Venue / Equipment / Both</li>
                         <li>Status</li>
                     </ul>
                 </li>
-                <li>Filtering options:
+                <li>Filtering:
                     <ul>
                         <li>All</li>
                         <li>Completed</li>
@@ -454,7 +434,24 @@
                         <li>Canceled</li>
                     </ul>
                 </li>
-                <li>Search and sorting functionality</li>
+                <li>Search and sorting capabilities</li>
+            </ul>
+        </div>
+
+        <!-- Profile & Account Settings -->
+        <div class="feature-card">
+            <div class="feature-icon profile">
+                <i class="fa-solid fa-id-card"></i>
+            </div>
+            <h3>Profile & Account Settings</h3>
+            <p class="feature-goal">
+                Manage personal and account information.
+            </p>
+            <ul class="feature-list">
+                <li>Profile photo upload</li>
+                <li>Account, Security, and Preferences tabs</li>
+                <li>Edit personal details</li>
+                <li>Save Changes functionality</li>
             </ul>
         </div>
 
