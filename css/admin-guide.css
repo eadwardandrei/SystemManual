@@ -423,6 +423,7 @@ body {
     0 12px 24px rgba(0,0,0,.08);
 }
 
+
 .overview-section,
 .workflow-section,
 .modules-section,
@@ -581,11 +582,6 @@ body {
     margin-top: 60px;
 }
 
-.feature-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
-    gap: 20px;
-}
 
 
 
@@ -897,11 +893,13 @@ footer {
     color: #555;
 }
 
-.timeline-number {
-    width: 32px;
-    height: 32px;
-    font-size: 0.85rem;
-    font-weight: 600;
+.timeline-item {
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.timeline-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 28px rgba(0,0,0,.08);
 }
 
 
@@ -1295,4 +1293,10 @@ footer {
 
 .user-guide-page .menu-link[href="#users"] .menu-icon {
     color: #fff;
+}
+
+@media (max-width: 768px) {
+    .workflow-arrow {
+        display: none;
+    }
 }
