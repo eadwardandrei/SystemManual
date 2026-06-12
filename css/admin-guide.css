@@ -558,8 +558,6 @@ body {
 }
 
 .timeline-number {
-    width: 55px;
-    height: 55px;
     border-radius: 50%;
     background: #1f6f54;
     color: white;
@@ -569,6 +567,11 @@ body {
     align-items: center;
 
     font-weight: bold;
+
+    width: 32px;
+    height: 32px;
+    font-size: 0.85rem;
+    font-weight: 600;
 }
 
 .timeline-content h3 {

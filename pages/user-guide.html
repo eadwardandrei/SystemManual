@@ -520,9 +520,9 @@
 
 <section id="create-account" class="account-section">
 
-    <div class="section-header">
-        <span>ACCOUNT ACCESS</span>
-        <h2>Create an Account</h2>
+        <div class="section-header">
+        <span>USER ACCESS</span>
+        <h2>Create a User Account</h2>
     </div>
 
     <div class="timeline">
@@ -530,10 +530,11 @@
         <div class="timeline-item">
             <div class="timeline-number">1</div>
             <div class="timeline-content">
-                <h3>Open the Registration Page</h3>
+                <h3>User Signs Up</h3>
                 <p>
-                    Navigate to the TechReserve login page and select the
-                    <strong>Create Account</strong> or <strong>Register</strong> option.
+                    A new user initiates account creation by completing the
+                    <strong>Sign Up</strong> process in TechReserve using valid
+                    personal and institutional information.
                 </p>
             </div>
         </div>
@@ -541,10 +542,10 @@
         <div class="timeline-item">
             <div class="timeline-number">2</div>
             <div class="timeline-content">
-                <h3>Enter Institutional Information</h3>
+                <h3>Account Added to Wishlist</h3>
                 <p>
-                    Provide your full name, institutional ID, and a valid
-                    university email address to verify eligibility.
+                    Upon successful sign up, the user account is temporarily
+                    stored in the <strong>Wishlist</strong> pending administrative review.
                 </p>
             </div>
         </div>
@@ -552,11 +553,10 @@
         <div class="timeline-item">
             <div class="timeline-number">3</div>
             <div class="timeline-content">
-                <h3>Select User Role</h3>
+                <h3>Admin Verification</h3>
                 <p>
-                    Choose the appropriate account role
-                    (<strong>Student</strong> or <strong>Faculty</strong>)
-                    based on your institutional affiliation.
+                    An administrator reviews the user’s submitted information
+                    and verifies eligibility for system access.
                 </p>
             </div>
         </div>
@@ -564,10 +564,13 @@
         <div class="timeline-item">
             <div class="timeline-number">4</div>
             <div class="timeline-content">
-                <h3>Create Login Credentials</h3>
+                <h3>Approval or Denial Decision</h3>
                 <p>
-                    Set a secure password and confirm it to complete
-                    your account credentials.
+                    If the request is <strong>denied</strong>, the account is stored
+                    in the database with a <em>Denied</em> status.
+                    <br><br>
+                    If <strong>approved</strong>, the administrator proceeds to
+                    send an account invitation.
                 </p>
             </div>
         </div>
@@ -575,10 +578,10 @@
         <div class="timeline-item">
             <div class="timeline-number">5</div>
             <div class="timeline-content">
-                <h3>Accept Terms and Submit</h3>
+                <h3>Send User Invitation</h3>
                 <p>
-                    Review the system terms, confirm consent, and submit
-                    the registration form for account creation.
+                    The system sends an invitation to the verified user,
+                    allowing them to activate their account.
                 </p>
             </div>
         </div>
@@ -586,10 +589,48 @@
         <div class="timeline-item">
             <div class="timeline-number">6</div>
             <div class="timeline-content">
-                <h3>Access the System</h3>
+                <h3>User Accepts Invitation</h3>
                 <p>
-                    Once registration is successful, log in to TechReserve
-                    to access reservations, notifications, and account features.
+                    Once the invitation is accepted, the user’s account status
+                    is updated in the <strong>User Accounts Database</strong>,
+                    granting access to the system.
+                </p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-number">7</div>
+            <div class="timeline-content">
+                <h3>Access Dashboard</h3>
+                <p>
+                    The user signs in and is redirected to the
+                    <strong>Dashboard</strong>, confirming successful account activation.
+                </p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-number">8</div>
+            <div class="timeline-content">
+                <h3>Update Account Information</h3>
+                <p>
+                    From <strong>Account Settings</strong>, users may update
+                    personal information and credentials.
+                    <br><br>
+                    <em>Role changes and account status modifications remain
+                    restricted to administrators.</em>
+                </p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-number">9</div>
+            <div class="timeline-content">
+                <h3>Account Deactivation or Deletion</h3>
+                <p>
+                    User accounts may be <strong>deactivated</strong> based on
+                    system rules or <strong>deleted</strong> by administrators
+                    when necessary, with all actions reflected in the database.
                 </p>
             </div>
         </div>
