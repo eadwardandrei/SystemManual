@@ -1235,3 +1235,75 @@ footer {
 .user-guide-page .menu-link[href="#users"] .menu-icon {
     color: #fff;
 }
+
+/* ===============================
+   USER INFO SECTIONS (UNIFIED)
+   =============================== */
+
+.user-info-section {
+    margin-bottom: 70px;
+}
+
+.user-info-card {
+    background: #ffffff;
+    border-radius: 22px;
+    padding: 30px 36px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,.06);
+    transition: all .3s ease;
+}
+
+.user-info-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 38px rgba(0,0,0,.08);
+}
+
+/* Header row inside card */
+.user-info-card .card-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    margin-bottom: 20px;
+}
+
+.user-info-card .card-header i {
+    font-size: 22px;
+    color: #1f6f54;
+
+    background: rgba(31,111,84,.12);
+    padding: 12px;
+    border-radius: 14px;
+}
+
+.user-info-card .card-header h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1f6f54;
+}
+
+/* Bullet list style */
+.user-info-card ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.user-info-card ul li {
+    position: relative;
+    padding-left: 26px;
+    margin-bottom: 3px;
+
+    line-height: 1.7;
+    color: #444;
+}
+
+.user-info-card ul li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    color: #1f6f54;
+    font-size: 20px;
+    line-height: 1;
+}
