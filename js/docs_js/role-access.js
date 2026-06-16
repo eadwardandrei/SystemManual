@@ -115,8 +115,6 @@ function showToast() {
     }, 1600);
 }
 
-
-
-if (!document.body.classList.contains("user-guide-page")) {
+if (!document.body.classList.contains("role-access-page")) {
     // existing scroll-based active logic
 }

@@ -117,6 +117,6 @@ function showToast() {
 
 
 
-if (!document.body.classList.contains("user-guide-page")) {
+if (!document.body.classList.contains("admin-guide-page")) {
     // existing scroll-based active logic
 }
