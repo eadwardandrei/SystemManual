@@ -518,6 +518,70 @@ html, body {
 }
 
 /* ===============================
+   ACCOUNT HIERARCHY
+=============================== */
+
+.hierarchy-flow {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+}
+
+.hierarchy-item {
+    background: #ffffff;
+    width: 100%;
+    max-width: 820px;
+    padding: 24px 26px;
+    border-radius: 16px;
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    box-shadow: 0 8px 22px rgba(0,0,0,0.06);
+}
+
+.hierarchy-icon {
+    min-width: 52px;
+    height: 52px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 20px;
+}
+
+.hierarchy-item.admin .hierarchy-icon {
+    background: linear-gradient(135deg, #1f6f54, #3dcb9a);
+}
+
+.hierarchy-item.employee .hierarchy-icon {
+    background: linear-gradient(135deg, #3a7bd5, #295bb5);
+}
+
+.hierarchy-item.user .hierarchy-icon {
+    background: linear-gradient(135deg, #6c757d, #495057);
+}
+
+.hierarchy-content h3 {
+    font-size: 22px;
+    color: #1f6f54;
+    margin-bottom: 6px;
+}
+
+.hierarchy-content p {
+    font-size: 16px;
+    color: #555555c6;
+    line-height: 1.6;
+}
+
+.hierarchy-arrow {
+    color: #aaa;
+    font-size: 18px;
+}
+
+/* ===============================
    CIRCULAR INTRO CARDS
    =============================== */
 .intro-circle-grid {

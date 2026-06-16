@@ -631,13 +631,75 @@
     </div>
     </section>
 
-    <section id="account-hierarchy" class="intro-section">
-        <span class="section-header">Account Hierarchy [N/A]</span>
-        <p class="intro-lead">
-            The system follows a role-based hierarchy consisting of Users, Administrators,
-            and System Managers, each with clearly defined access levels and permissions.
-        </p>
-    </section>
+    <section id="account-hierarchy" class="intro-section capabilities-section">
+
+    <span class="section-header">Account Hierarchy</span>
+
+    <p class="intro-lead">
+        TechReserve follows a structured role-based hierarchy that defines how
+        access, authority, and responsibilities are distributed across the system.
+        Each role is designed to support secure operations and efficient reservation
+        management.
+    </p>
+
+    <div class="hierarchy-flow">
+
+        <!-- ADMINISTRATOR -->
+        <div class="hierarchy-item admin">
+            <div class="hierarchy-icon">
+                <i class="fa-solid fa-user-shield"></i>
+            </div>
+            <div class="hierarchy-content">
+                <h3>Administrator</h3>
+                <p>
+                    Holds the highest level of system authority. Administrators
+                    oversee all system operations, manage accounts, configure
+                    facilities, and enforce reservation policies.
+                </p>
+            </div>
+        </div>
+
+        <div class="hierarchy-arrow">
+            <i class="fa-solid fa-arrow-down"></i>
+        </div>
+
+        <!-- EMPLOYEE -->
+        <div class="hierarchy-item employee">
+            <div class="hierarchy-icon">
+                <i class="fa-solid fa-user-gear"></i>
+            </div>
+            <div class="hierarchy-content">
+                <h3>Employee / Staff</h3>
+                <p>
+                    Supports daily operations by handling assigned reservations,
+                    monitoring facility usage, and assisting administrators in
+                    task assignments and workflows.
+                </p>
+            </div>
+        </div>
+
+        <div class="hierarchy-arrow">
+            <i class="fa-solid fa-arrow-down"></i>
+        </div>
+
+        <!-- USER -->
+        <div class="hierarchy-item user">
+            <div class="hierarchy-icon">
+                <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="hierarchy-content">
+                <h3>User</h3>
+                <p>
+                    End-users who submit reservation requests, view availability,
+                    track request status, and manage their personal account
+                    information within the system.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
 
     <section id="faq" class="intro-section faq-section">
 
