@@ -453,6 +453,25 @@ html, body {
     letter-spacing: -5px;
 }
 
+.hero-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 28px;
+    background: #1f6f54; /* FEU Green */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.hero-btn:hover {
+    background: #FABD15; /* FEU Gold */
+    color: #000;
+    transform: translateY(-2px);
+}
+
 /* ===============================
    INTRO SECTION
    =============================== */
