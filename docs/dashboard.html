@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TechReserve Manual</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/docs_css/dashboard.css">
+<link rel="icon" type="image/png" href="../images/TechReserve_Logo 1.png">
+    <script src="https://kit.fontawesome.com/cc0199301c.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+<div class="layout">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <header class="sidebar-header">
+            <div class="sidebar-top">
+                <img src="../images/TechReserve_Logo 1.png" alt="TechReserve Logo" class="logo">
+
+                <button class="sidebar-toggle" id="sidebarToggle">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+
+            <h2>
+                <span class="sidebar-text1">Tech</span><span class="sidebar-text2">Reserve</span>
+            </h2>
+
+            <div class="manual-text">SYSTEM MANUAL</div>
+        </header>
+
+        <div class="sidebar-search">
+            <input type="text" class="search-box" placeholder="Search manual...">
+        </div>
+
+        <nav class="menu">
+
+
+        <a href="../index.html" class="menu-link">
+        <span class="menu-icon"><i class="fa-regular fa-house"></i></span>
+        <span class="menu-text">Introduction</span>
+        </a>
+
+        <a href="../index.html#capabilities" class="menu-link active">
+        <span class="menu-icon"><i class="fa-solid fa-gears"></i></span>
+        <span class="menu-text">System Capabilities</span>
+        </a>
+
+        <!-- FOR USERS -->
+        <a href="../index.html#users" class="menu-link">
+            <span class="menu-icon"><i class="fa-regular fa-face-smile"></i></span>
+            <span class="menu-text">For Users</span>
+        </a>
+
+        <!-- FOR ADMINS -->
+        <a href="../index.html#admins" class="menu-link">
+            <span class="menu-icon"><i class="fa-solid fa-face-smile"></i></span>
+            <span class="menu-text">For Administrators</span>
+        </a>
+
+        <!--
+        <a href="../index.html#manual-guides" class="menu-link">
+            <span class="menu-icon"><i class="fa-solid fa-chalkboard"></i></span>
+            <span class="menu-text">Manual Guides</span>
+        </a>
+        -->
+
+        <!-- SYSTEM MODULES -->
+        <a href="../index.html#system-modules" class="menu-link">
+            <span class="menu-icon"><i class="fa-solid fa-align-right"></i></span>
+            <span class="menu-text">System Modules</span>
+        </a>
+
+        <a href="../index.html#about" class="menu-link">
+            <span class="menu-icon"><i class="fa-solid fa-ellipsis"></i></span>
+            <span class="menu-text">About</span>
+        </a>
+
+        <a href="../index.html#account-hierarchy" class="menu-link">
+            <span class="menu-icon"><i class="fa-regular fa-circle-dot"></i></span>
+            <span class="menu-text">Account Hierarchy</span>
+        </a>
+
+        <a href="../index.html#faq" class="menu-link">
+            <span class="menu-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+            <span class="menu-text">FAQ</span>
+        </a>
+
+        <a href="../index.html#contributors" class="menu-link">
+            <span class="menu-icon"><i class="fa-regular fa-circle-question"></i></span>
+            <span class="menu-text">Contributors</span>
+        </a>
+
+    </nav>
+
+        <div class="help-box">
+            <p class="help-title">Need Help?</p>
+            <p>Email: datamstechreserve@gmail.com</p>
+        </div>
+    
+    <div class="sidebar-resizer" id="sidebarResizer"></div>
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+<main class="content">
+
+   <!-- TOP NAVIGATION -->
+    <div class="page-navigation">
+
+        <button class="back-btn" onclick="history.back()">
+            <i class="fa-solid fa-arrow-left"></i>
+            Back
+        </button>
+
+        <div class="breadcrumb">
+            <a href="../index.html">Introduction</a>
+            <i class="fa-solid fa-chevron-right"></i>
+            <strong>Dashboard</strong>
+        </div>
+
+    </div>
+
+   <!-- RBAC HERO -->
+<section class="guide-hero">
+
+    <div class="hero-shape shape-1"></div>
+    <div class="hero-shape shape-2"></div>
+
+    <div class="guide-hero-content">
+
+        <span class="guide-badge">
+        <i class="fa-solid fa-shield-halved"></i>
+        Dashboard
+        </span>
+
+    <h1>Dashboard Module</h1>
+
+    <p>
+        The Dashboard serves as the central workspace of TechReserve,
+        providing users and administrators with real-time insights,
+        system summaries, and quick access to essential actions.
+    </p>
+
+    </div>
+
+</section>
+
+    <!-- QUICK LINKS -->
+<section class="quick-links">
+
+    <a href="#admin-dashboard">
+        <i class="fa-solid fa-user-shield"></i>
+        Admin Dashboard
+    </a>
+
+    <a href="#borrower-dashboard">
+        <i class="fa-solid fa-user"></i>
+        Borrower Dashboard
+    </a>
+
+</section>
+
+<section id="admin-dashboard" class="rbac-section dashboard-role admin-view">
+    <div class="section-header">
+        <span>ADMIN VIEW</span>
+        <h2>Administrator Dashboard</h2>
+    </div>
+
+    <p class="role-desc">
+        The Administrator Dashboard provides system-wide visibility over
+        reservations, equipment usage, approvals, and operational risks.
+    </p>
+
+    <div class="role-grid">
+
+    <div class="role-card admin">
+        <div class="role-header">
+            <i class="fa-solid fa-users"></i>
+            <h3>Total Users</h3>
+        </div>
+        <p class="role-desc">Displays the total number of registered system users.</p>
+    </div>
+
+    <div class="role-card admin">
+        <div class="role-header">
+            <i class="fa-solid fa-clock"></i>
+            <h3>Pending Requests</h3>
+        </div>
+        <p class="role-desc">Shows reservation requests awaiting approval.</p>
+    </div>
+
+    <div class="role-card admin">
+        <div class="role-header">
+            <i class="fa-solid fa-circle-check"></i>
+            <h3>Approved Requests</h3>
+        </div>
+        <p class="role-desc">Lists reservations approved and scheduled for use.</p>
+    </div>
+
+    <div class="role-card admin">
+        <div class="role-header">
+            <i class="fa-solid fa-triangle-exclamation"></i>
+            <h3>Overdue Equipment</h3>
+        </div>
+        <p class="role-desc">Highlights items not returned beyond the scheduled time.</p>
+    </div>
+
+</div>
+</section>
+
+
+<section id="borrower-dashboard" class="rbac-section dashboard-role borrower-view">
+    <div class="section-header">
+            <span>BORROWER VIEW</span>
+            <h2>Borrower Dashboard</h2>
+        </div>
+
+        <p class="role-desc">
+            The Borrower Dashboard allows users to manage reservations,
+            track approval status, and monitor active and completed requests.
+        </p>
+
+        <div class="role-grid">
+
+    <div class="role-card borrower">
+        <div class="role-header">
+            <i class="fa-solid fa-clock"></i>
+            <h3>Pending Requests</h3>
+        </div>
+        <p class="role-desc">Reservation requests awaiting administrator approval.</p>
+    </div>
+
+    <div class="role-card borrower">
+        <div class="role-header">
+            <i class="fa-solid fa-circle-check"></i>
+            <h3>Approved Requests</h3>
+        </div>
+        <p class="role-desc">Requests approved and ready for use.</p>
+    </div>
+
+    <div class="role-card borrower">
+        <div class="role-header">
+            <i class="fa-solid fa-calendar-day"></i>
+            <h3>Active Reservations</h3>
+        </div>
+        <p class="role-desc">Reservations currently in use by the borrower.</p>
+    </div>
+
+    <div class="role-card borrower">
+        <div class="role-header">
+            <i class="fa-solid fa-box-archive"></i>
+            <h3>Completed Records</h3>
+        </div>
+        <p class="role-desc">Completed and archived reservation records.</p>
+    </div>
+
+</div>
+</section>
+
+
+    <footer>
+        © 2026 TechReserve. All rights reserved.
+    </footer>
+
+</main>
+
+</div>
+
+<script src="../js/docs_js/dashboard.js"></script>
+
+</body>
+</html>
