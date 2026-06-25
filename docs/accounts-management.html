@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TechReserve Manual</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/docs_css/accounts-management.css">
+<link rel="icon" type="image/png" href="../images/TechReserve_Logo 1.png">
+    <script src="https://kit.fontawesome.com/cc0199301c.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+<div class="layout">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <header class="sidebar-header">
+            <div class="sidebar-top">
+                <img src="../images/TechReserve_Logo 1.png" alt="TechReserve Logo" class="logo">
+
+                <button class="sidebar-toggle" id="sidebarToggle">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+
+            <h2>
+                <span class="sidebar-text1">Tech</span><span class="sidebar-text2">Reserve</span>
+            </h2>
+
+            <div class="manual-text">SYSTEM MANUAL</div>
+        </header>
+
+        <div class="sidebar-search">
+            <input type="text" class="search-box" placeholder="Search manual...">
+        </div>
+
+        <nav class="menu">
+
+
+        <a href="../index.html" class="menu-link">
+        <span class="menu-icon"><i class="fa-regular fa-house"></i></span>
+        <span class="menu-text">Introduction</span>
+        </a>
+
+        <a href="../index.html#capabilities" class="menu-link active">
+        <span class="menu-icon"><i class="fa-solid fa-gears"></i></span>
+        <span class="menu-text">System Capabilities</span>
+        </a>
+
+        <!-- FOR USERS -->
+        <a href="../index.html#users" class="menu-link">
+            <span class="menu-icon"><i class="fa-regular fa-face-smile"></i></span>
+            <span class="menu-text">For Users</span>
+        </a>
+
+        <!-- FOR ADMINS -->
+        <a href="../index.html#admins" class="menu-link">
+            <span class="menu-icon"><i class="fa-solid fa-face-smile"></i></span>
+            <span class="menu-text">For Administrators</span>
+        </a>
+
+        <!--
+        <a href="../index.html#manual-guides" class="menu-link">
+            <span class="menu-icon"><i class="fa-solid fa-chalkboard"></i></span>
+            <span class="menu-text">Manual Guides</span>
+        </a>
+        -->
+
+        <!-- SYSTEM MODULES -->
+        <a href="../index.html#system-modules" class="menu-link">
+            <span class="menu-icon"><i class="fa-solid fa-align-right"></i></span>
+            <span class="menu-text">System Modules</span>
+        </a>
+
+        <a href="../index.html#about" class="menu-link">
+            <span class="menu-icon"><i class="fa-solid fa-ellipsis"></i></span>
+            <span class="menu-text">About</span>
+        </a>
+
+        <a href="../index.html#account-hierarchy" class="menu-link">
+            <span class="menu-icon"><i class="fa-regular fa-circle-dot"></i></span>
+            <span class="menu-text">Account Hierarchy</span>
+        </a>
+
+        <a href="../index.html#faq" class="menu-link">
+            <span class="menu-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+            <span class="menu-text">FAQ</span>
+        </a>
+
+        <a href="../index.html#contributors" class="menu-link">
+            <span class="menu-icon"><i class="fa-regular fa-circle-question"></i></span>
+            <span class="menu-text">Contributors</span>
+        </a>
+
+    </nav>
+
+        <div class="help-box">
+            <p class="help-title">Need Help?</p>
+            <p>Email: datamstechreserve@gmail.com</p>
+        </div>
+    
+    <div class="sidebar-resizer" id="sidebarResizer"></div>
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+<main class="content">
+
+   <!-- TOP NAVIGATION -->
+    <div class="page-navigation">
+
+        <button class="back-btn" onclick="history.back()">
+            <i class="fa-solid fa-arrow-left"></i>
+            Back
+        </button>
+
+        <div class="breadcrumb">
+            <a href="../index.html">Introduction</a>
+            <i class="fa-solid fa-chevron-right"></i>
+            <strong>Accounts Management</strong>
+        </div>
+
+    </div>
+
+       <!-- RBAC HERO -->
+<section class="guide-hero">
+
+    <div class="hero-shape shape-1"></div>
+    <div class="hero-shape shape-2"></div>
+
+    <div class="guide-hero-content">
+
+        <span class="guide-badge">
+        <i class="fa-solid fa-shield-halved"></i>
+        Accounts Management
+        </span>
+
+    <h1>Accounts Management Module</h1>
+
+    <p>
+    The Accounts Management module allows administrators to manage
+    user access, assign roles, and maintain system security through
+    account verification, activation, deactivation, and
+    permission-based controls.
+    </p>
+
+    </div>
+
+</section>
+
+<!-- QUICK LINKS -->
+<section class="quick-links">
+
+    <a href="#module-overview">
+        <i class="fa-solid fa-layer-group"></i>
+        Module Overview
+    </a>
+
+    <a href="#borrower-account">
+        <i class="fa-solid fa-user"></i>
+        Borrower Account
+    </a>
+
+    <a href="#borrower-create">
+        <i class="fa-solid fa-user-plus"></i>
+        Create Borrower Account
+    </a>
+
+    <a href="#borrower-update">
+        <i class="fa-solid fa-user-pen"></i>
+        Update Borrower Account
+    </a>
+
+    <a href="#admin-account">
+        <i class="fa-solid fa-user-shield"></i>
+        Admin Account
+    </a>
+
+    <a href="#admin-create">
+        <i class="fa-solid fa-user-gear"></i>
+        Create Admin / Staff
+    </a>
+
+    <a href="#account-verification">
+        <i class="fa-solid fa-circle-check"></i>
+        Account Verification
+    </a>
+
+    <a href="#account-status">
+        <i class="fa-solid fa-toggle-on"></i>
+        Account Status Control
+    </a>
+
+</section>
+
+    <!-- MODULE OVERVIEW -->
+    <section id="module-overview" class="user-info-section">
+        <div class="section-header">
+            <span>OVERVIEW</span>
+            <h2>Managing System Accounts</h2>
+        </div>
+    
+    <div class="user-info-card">
+
+    <p class="role-desc">
+    This module centralizes all account-related operations,
+    including registration approval, role assignment,
+    access restriction, and account recovery. It ensures that
+    only authorized users can securely interact with
+    TechReserve’s reservation system.
+    </p>
+
+    </div>
+
+    </section>
+
+ <section id="borrower-account" class="user-info-section">
+
+    <div class="section-header">
+        <span>USER ACCESS</span>
+        <h2>Borrower Account Management</h2>
+    </div>
+
+    <div class="user-info-card">
+
+        <div class="card-header">
+            <i class="fa-solid fa-user"></i>
+            <h3>Borrower Account Overview</h3>
+        </div>
+
+        <ul>
+            <li>Borrower accounts are intended for students, faculty, and authorized users.</li>
+            <li>These accounts allow users to request and manage reservations.</li>
+            <li>Borrowers have no administrative control over system data.</li>
+            <li>All borrower accounts require administrator approval.</li>
+        </ul>
+
+    </div>
+
+</section>
+
+<section id="borrower-create" class="steps-section">
+
+    <div class="section-header">
+        <span>STEP-BY-STEP</span>
+        <h2>Creating a Borrower Account</h2>
+    </div>
+
+    <div class="timeline">
+
+        <div class="timeline-item">
+            <div class="timeline-number">1</div>
+            <div class="timeline-content">
+                <h3>Access Registration Page</h3>
+                <p>
+                    The user navigates to the TechReserve registration page and
+                    selects <strong>Create Account</strong>.
+                </p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-number">2</div>
+            <div class="timeline-content">
+                <h3>Submit Required Information</h3>
+                <p>
+                    The user provides personal and institutional details using
+                    a valid email address.
+                </p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-number">3</div>
+            <div class="timeline-content">
+                <h3>Account Pending Verification</h3>
+                <p>
+                    The account is stored with a <em>Pending</em> status until
+                    reviewed by an administrator.
+                </p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-number">4</div>
+            <div class="timeline-content">
+                <h3>Approval and Activation</h3>
+                <p>
+                    Once approved, the borrower gains access to the system dashboard.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="borrower-update" class="steps-section">
+
+    <div class="section-header">
+        <span>ACCOUNT SETTINGS</span>
+        <h2>Updating a Borrower Account</h2>
+    </div>
+
+    <div class="timeline">
+
+        <div class="timeline-item">
+            <div class="timeline-number">1</div>
+            <div class="timeline-content">
+                <h3>Log In</h3>
+                <p>
+                    The borrower signs in using valid account credentials.
+                </p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-number">2</div>
+            <div class="timeline-content">
+                <h3>Open Account Settings</h3>
+                <p>
+                    The user navigates to the <strong>Profile & Account Settings</strong> section.
+                </p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-number">3</div>
+            <div class="timeline-content">
+                <h3>Edit Information</h3>
+                <p>
+                    Allowed personal details may be updated and saved.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="admin-account" class="user-info-section">
+
+    <div class="section-header">
+        <span>ADMINISTRATIVE ACCESS</span>
+        <h2>Administrator Account Management</h2>
+    </div>
+
+    <div class="user-info-card">
+
+        <div class="card-header">
+            <i class="fa-solid fa-user-shield"></i>
+            <h3>Administrator Responsibilities</h3>
+        </div>
+
+        <ul>
+            <li>Administrators manage users, permissions, and system data.</li>
+            <li>They approve account requests and reservation submissions.</li>
+            <li>Admins control account status and role assignments.</li>
+        </ul>
+
+    </div>
+
+</section>
+
+<section id="admin-create" class="steps-section">
+
+    <div class="section-header">
+        <span>ADMIN ACTION</span>
+        <h2>Creating Admin and Staff Accounts</h2>
+    </div>
+
+    <div class="timeline">
+
+        <div class="timeline-item">
+            <div class="timeline-number">1</div>
+            <div class="timeline-content">
+                <h3>Access Accounts Management</h3>
+                <p>
+                    An administrator opens the <strong>Accounts Management</strong> module.
+                </p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-number">2</div>
+            <div class="timeline-content">
+                <h3>Create New Account</h3>
+                <p>
+                    The administrator selects <strong>Create Account</strong> and assigns a role
+                    (Administrator or Staff).
+                </p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-number">3</div>
+            <div class="timeline-content">
+                <h3>Assign Permissions</h3>
+                <p>
+                    Role-based permissions are configured before activation.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="account-verification" class="steps-section">
+
+    <div class="section-header">
+        <span>REQUEST HUB</span>
+        <h2>Account Verification</h2>
+    </div>
+
+    <div class="timeline">
+
+        <div class="timeline-item">
+            <div class="timeline-number">1</div>
+            <div class="timeline-content">
+                <h3>Review Pending Requests</h3>
+                <p>
+                    Administrators access pending accounts from the Request Hub.
+                </p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-number">2</div>
+            <div class="timeline-content">
+                <h3>Approve or Reject</h3>
+                <p>
+                    Submitted information is validated before approval or denial.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="account-status" class="steps-section">
+
+    <div class="section-header">
+        <span>SECURITY CONTROL</span>
+        <h2>Account Deactivation and Reactivation</h2>
+    </div>
+
+    <div class="timeline">
+
+        <div class="timeline-item">
+            <div class="timeline-number">1</div>
+            <div class="timeline-content">
+                <h3>Select Account</h3>
+                <p>
+                    The administrator selects a user account from the database.
+                </p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-number">2</div>
+            <div class="timeline-content">
+                <h3>Deactivate or Reactivate</h3>
+                <p>
+                    The account status is changed to <strong>Inactive</strong> or
+                    restored to <strong>Active</strong> as needed.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+    <footer>
+        © 2026 TechReserve. All rights reserved.
+    </footer>
+
+</main>
+
+</div>
+
+<script src="../js/docs_js/accounts-management.js"></script>
+
+</body>
+</html>
