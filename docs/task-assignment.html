@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TechReserve Manual</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/docs_css/task-assignment.css">
+<link rel="icon" type="image/png" href="../images/TechReserve_Logo 1.png">
+    <script src="https://kit.fontawesome.com/cc0199301c.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+<div class="layout">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <header class="sidebar-header">
+            <div class="sidebar-top">
+                <img src="../images/TechReserve_Logo 1.png" alt="TechReserve Logo" class="logo">
+
+                <button class="sidebar-toggle" id="sidebarToggle">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+
+            <h2>
+                <span class="sidebar-text1">Tech</span><span class="sidebar-text2">Reserve</span>
+            </h2>
+
+            <div class="manual-text">SYSTEM MANUAL</div>
+        </header>
+
+        <div class="sidebar-search">
+            <input type="text" class="search-box" placeholder="Search manual...">
+        </div>
+
+        <nav class="menu">
+
+
+        <a href="../index.html" class="menu-link">
+        <span class="menu-icon"><i class="fa-regular fa-house"></i></span>
+        <span class="menu-text">Introduction</span>
+        </a>
+
+        <a href="../index.html#capabilities" class="menu-link active">
+        <span class="menu-icon"><i class="fa-solid fa-gears"></i></span>
+        <span class="menu-text">System Capabilities</span>
+        </a>
+
+        <!-- FOR USERS -->
+        <a href="../index.html#users" class="menu-link">
+            <span class="menu-icon"><i class="fa-regular fa-face-smile"></i></span>
+            <span class="menu-text">For Users</span>
+        </a>
+
+        <!-- FOR ADMINS -->
+        <a href="../index.html#admins" class="menu-link">
+            <span class="menu-icon"><i class="fa-solid fa-face-smile"></i></span>
+            <span class="menu-text">For Administrators</span>
+        </a>
+
+        <!--
+        <a href="../index.html#manual-guides" class="menu-link">
+            <span class="menu-icon"><i class="fa-solid fa-chalkboard"></i></span>
+            <span class="menu-text">Manual Guides</span>
+        </a>
+        -->
+
+        <!-- SYSTEM MODULES -->
+        <a href="../index.html#system-modules" class="menu-link">
+            <span class="menu-icon"><i class="fa-solid fa-align-right"></i></span>
+            <span class="menu-text">System Modules</span>
+        </a>
+
+        <a href="../index.html#about" class="menu-link">
+            <span class="menu-icon"><i class="fa-solid fa-ellipsis"></i></span>
+            <span class="menu-text">About</span>
+        </a>
+
+        <a href="../index.html#account-hierarchy" class="menu-link">
+            <span class="menu-icon"><i class="fa-regular fa-circle-dot"></i></span>
+            <span class="menu-text">Account Hierarchy</span>
+        </a>
+
+        <a href="../index.html#faq" class="menu-link">
+            <span class="menu-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+            <span class="menu-text">FAQ</span>
+        </a>
+
+        <a href="../index.html#contributors" class="menu-link">
+            <span class="menu-icon"><i class="fa-regular fa-circle-question"></i></span>
+            <span class="menu-text">Contributors</span>
+        </a>
+
+    </nav>
+
+        <div class="help-box">
+            <p class="help-title">Need Help?</p>
+            <p>Email: datamstechreserve@gmail.com</p>
+        </div>
+    
+    <div class="sidebar-resizer" id="sidebarResizer"></div>
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+<main class="content">
+
+   <!-- TOP NAVIGATION -->
+    <div class="page-navigation">
+
+        <button class="back-btn" onclick="history.back()">
+            <i class="fa-solid fa-arrow-left"></i>
+            Back
+        </button>
+
+        <div class="breadcrumb">
+            <a href="../index.html">Introduction</a>
+            <i class="fa-solid fa-chevron-right"></i>
+            <strong>Task Assignments</strong>
+        </div>
+
+    </div>
+
+           <!-- RBAC HERO -->
+<section class="guide-hero">
+
+    <div class="hero-shape shape-1"></div>
+    <div class="hero-shape shape-2"></div>
+
+    <div class="guide-hero-content">
+        <span class="guide-badge">
+            <i class="fa-solid fa-list-check"></i>
+            Platform Capability
+        </span>
+
+        <h1>Task Assignments Module</h1>
+
+        <p>
+            The Task Assignments module enables administrators to assign,
+            track, and manage operational tasks related to reservations,
+            equipment handling, maintenance, and system actions. It ensures
+            accountability, workflow clarity, and timely execution.
+        </p>
+    </div>
+
+</section>
+
+<!-- QUICK LINKS -->
+<section class="quick-links">
+    <a href="#module-overview">
+        <i class="fa-solid fa-layer-group"></i> Overview
+    </a>
+
+    <a href="#task-types">
+        <i class="fa-solid fa-clipboard-list"></i> Task Types
+    </a>
+
+    <a href="#assignment-flow">
+        <i class="fa-solid fa-diagram-project"></i> Assignment Workflow
+    </a>
+
+    <a href="#status-tracking">
+        <i class="fa-solid fa-spinner"></i> Status Tracking
+    </a>
+
+    <a href="#task-table">
+        <i class="fa-solid fa-table-list"></i> Task Records
+    </a>
+
+    <a href="#notifications">
+        <i class="fa-solid fa-bell"></i> Notifications
+    </a>
+
+    <a href="#admin-actions">
+        <i class="fa-solid fa-user-gear"></i> Admin Actions
+    </a>
+</section>
+
+<!-- OVERVIEW -->
+<section id="module-overview" class="user-info-section">
+    <div class="section-header">
+        <span>OVERVIEW</span>
+        <h2>Managing Operational Tasks</h2>
+    </div>
+
+    <div class="user-info-card">
+        <ul>
+    <li>
+        The Task Assignments page is used to monitor reservation-related workloads,
+        review staff assignments, and ensure all deployments remain on schedule.
+    </li>
+    <li>
+        Provides an overview of task metrics including total assignments,
+        in-progress tasks, completed tasks, and overdue assignments.
+    </li>
+    <li>
+        Displays a task table showing which employee or staff member is
+        assigned to a specific reservation.
+    </li>
+    <li>
+        Allows administrators to assign operational tasks to staff members
+        responsible for reservation handling, equipment preparation, and maintenance.
+    </li>
+    <li>
+        Integrates an SMS and notification module to immediately inform staff
+        when a reservation or task is assigned to them.
+    </li>
+</ul>
+    </div>
+</section>
+
+
+<!-- TASK TYPES -->
+<section id="task-types" class="user-info-section">
+    <div class="section-header">
+        <span>TASK CATEGORIES</span>
+        <h2>Types of Assignable Tasks</h2>
+    </div>
+
+    <div class="task-grid">
+        <div class="task-card">
+            <i class="fa-solid fa-calendar-check"></i>
+            <h4>Reservation Handling</h4>
+            <p>Tasks related to approving, preparing, and releasing reserved resources.</p>
+        </div>
+
+        <div class="task-card">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+            <h4>Maintenance Tasks</h4>
+            <p>Assignments for inspecting, repairing, and maintaining equipment.</p>
+        </div>
+
+        <div class="task-card">
+            <i class="fa-solid fa-box"></i>
+            <h4>Equipment Turnover</h4>
+            <p>Ensures proper check-in, check-out, and condition verification.</p>
+        </div>
+
+        <div class="task-card">
+            <i class="fa-solid fa-clipboard-check"></i>
+            <h4>Compliance & Audit</h4>
+            <p>Tasks supporting record verification and system audits.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ASSIGNMENT FLOW -->
+<section id="assignment-flow" class="user-info-section">
+
+    <div class="section-header">
+        <span>PROCESS</span>
+        <h2>Task Assignments Workflow</h2>
+    </div>
+
+    <div class="workflow-container">
+
+        <div class="workflow-card">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <h4>Identify Task</h4>
+            <p>
+                Administrator identifies the required operational
+                task based on system activity or requests.
+            </p>
+        </div>
+
+        <div class="workflow-arrow">
+            <i class="fa-solid fa-arrow-right"></i>
+        </div>
+
+        <div class="workflow-card">
+            <i class="fa-solid fa-user-check"></i>
+            <h4>Assign Staff</h4>
+            <p>
+                Task is assigned to a specific staff member
+                responsible for execution.
+            </p>
+        </div>
+
+        <div class="workflow-arrow">
+            <i class="fa-solid fa-arrow-right"></i>
+        </div>
+
+        <div class="workflow-card">
+            <i class="fa-solid fa-clock"></i>
+            <h4>Set Priority & Due Date</h4>
+            <p>
+                Priority level and completion deadline
+                are defined by the administrator.
+            </p>
+        </div>
+
+        <div class="workflow-arrow">
+            <i class="fa-solid fa-arrow-right"></i>
+        </div>
+
+        <div class="workflow-card">
+            <i class="fa-solid fa-gear"></i>
+            <h4>Execute Task</h4>
+            <p>
+                Staff performs the task and updates its
+                progress within the system.
+            </p>
+        </div>
+
+        <div class="workflow-arrow">
+            <i class="fa-solid fa-arrow-right"></i>
+        </div>
+
+        <div class="workflow-card">
+            <i class="fa-solid fa-circle-check"></i>
+            <h4>Review & Close</h4>
+            <p>
+                Administrator reviews the outcome and
+                marks the task as completed.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- STATUS TRACKING -->
+<section id="status-tracking" class="user-info-section">
+    <div class="section-header">
+        <span>TRACKING</span>
+        <h2>Task Status Monitoring</h2>
+    </div>
+
+    <div class="status-card-grid">
+
+        <div class="status-info-card pending">
+            <div class="feature-icon deployed">
+            <i class="fa-solid fa-hourglass-start"></i>
+            </div>
+            <h4>Pending</h4>
+            <p>
+                Task has been created and assigned but has not yet been started
+                by the responsible staff member.
+            </p>
+        </div>
+
+        <div class="status-info-card progress">
+            <div class="feature-icon register">
+            <i class="fa-solid fa-spinner"></i>
+            </div>
+            <h4>In Progress</h4>
+            <p>
+                Task is actively being worked on and is currently under execution.
+            </p>
+        </div>
+
+        <div class="status-info-card completed">
+            <div class="feature-icon profile">
+            <i class="fa-solid fa-circle-check"></i>
+            </div>
+            <h4>Completed</h4>
+            <p>
+                Task has been successfully finished and verified by the administrator.
+            </p>
+        </div>
+
+        <div class="status-info-card overdue">
+            <div class="feature-icon equipment">
+            <i class="fa-solid fa-triangle-exclamation"></i>
+            </div>
+            <h4>Overdue</h4>
+            <p>
+                Task has exceeded its assigned due date and requires immediate action.
+            </p>
+        </div>
+
+        <div class="status-info-card cancelled">
+            <div class="feature-icon deployed">
+            <i class="fa-solid fa-ban"></i>
+            </div>
+            <h4>Cancelled</h4>
+            <p>
+                Task was discontinued due to reservation changes or administrative decisions.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- TASK ASSIGNMENT TABLE -->
+<section id="task-table" class="user-info-section">
+    <div class="section-header">
+        <span>ASSIGNMENTS</span>
+        <h2>Task Assignments Records</h2>
+    </div>
+
+    <div class="user-info-card">
+        <ul>
+            <li>
+                Displays a table listing reservations and their corresponding
+                assigned staff or employees.
+            </li>
+            <li>
+                Shows task details such as reservation ID, task type,
+                assigned personnel, due date, and current status.
+            </li>
+            <li>
+                Enables administrators to easily track accountability
+                and workload distribution.
+            </li>
+        </ul>
+    </div>
+</section>
+
+<!-- NOTIFICATIONS -->
+<section id="notifications" class="user-info-section">
+    <div class="section-header">
+        <span>COMMUNICATION</span>
+        <h2>Task Notifications</h2>
+    </div>
+
+    <div class="user-info-card">
+        <ul>
+    <li>
+        An SMS message and system notification are sent automatically
+        when a task or reservation is assigned to a staff member.
+    </li>
+    <li>
+        Notifications include task details such as reservation reference,
+        assigned responsibility, and due date.
+    </li>
+    <li>
+        Staff receive reminders for approaching deadlines or overdue tasks.
+    </li>
+    <li>
+        Administrators are notified of task completion, verification,
+        or overdue assignments.
+    </li>
+</ul>
+    </div>
+</section>
+
+<!-- ADMIN TASK MANAGEMENT -->
+<section id="admin-actions" class="user-info-section">
+    <div class="section-header">
+        <span>ADMIN CONTROLS</span>
+        <h2>Managing Task Assignments</h2>
+    </div>
+
+    <div class="timeline">
+
+        <div class="timeline-item">
+            <div class="timeline-number">1</div>
+            <div class="timeline-content">
+                <h3>Select Related Reservation</h3>
+                <p>
+                    The administrator identifies a reservation or system activity
+                    that requires an operational task.
+                </p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-number">2</div>
+            <div class="timeline-content">
+                <h3>Create Task Assignment</h3>
+                <p>
+                    A task is created through the Task Assignments interface
+                    and linked to the selected reservation or resource.
+                </p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-number">3</div>
+            <div class="timeline-content">
+                <h3>Assign Staff Member</h3>
+                <p>
+                    The administrator assigns the task to a specific staff member
+                    and defines priority and due date.
+                </p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-number">4</div>
+            <div class="timeline-content">
+                <h3>Send Notification</h3>
+                <p>
+                    The system automatically sends a notification or SMS
+                    to inform the assigned staff of the task details.
+                </p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-number">5</div>
+            <div class="timeline-content">
+                <h3>Monitor Task Progress</h3>
+                <p>
+                    The administrator tracks task status, progress updates,
+                    and staff activity through the task dashboard.
+                </p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-number">6</div>
+            <div class="timeline-content">
+                <h3>Verify and Close Task</h3>
+                <p>
+                    Upon completion, the administrator reviews the task
+                    and marks it as completed or reassigns if necessary.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+    <footer>
+        © 2026 TechReserve. All rights reserved.
+    </footer>
+
+</main>
+
+</div>
+
+<script src="../js/docs_js/task-assignment.js"></script>
+
+</body>
+</html>
