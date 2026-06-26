@@ -156,24 +156,48 @@
     <a href="#reservation-create"><i class="fa-solid fa-calendar-plus"></i>Create Reservation</a>
     <a href="#reservation-status"><i class="fa-solid fa-clock"></i>Reservation Status</a>
     <a href="#admin-reservations"><i class="fa-solid fa-user-shield"></i>Admin Control</a>
-    <a href="#reservation-approval"><i class="fa-solid fa-check-double"></i>Approval Workflow</a>
+    <a href="#reservation-approval"><i class="fa-solid fa-route"></i>Approval Workflow</a>
+    <a href="#reservation-approval">
+        <i class="fa-solid fa-check-double"></i>
+        Approve / Deny Requests
+    </a>
+
+    <a href="#reservation-deployment">
+        <i class="fa-solid fa-truck-ramp-box"></i>
+        Deploy Approved Requests
+    </a>
+
+    <a href="#reservation-tracking">
+        <i class="fa-solid fa-chart-line"></i>
+        Reservation Tracking
+    </a>
 </section>
 
 <!-- OVERVIEW -->
 <section id="module-overview" class="user-info-section">
+
     <div class="section-header">
         <span>OVERVIEW</span>
         <h2>Managing Reservations</h2>
     </div>
 
     <div class="user-info-card">
-        <p class="role-desc">
-            This module manages the full reservation lifecycle — from
-            borrower submission to administrative approval and completion.
-            It ensures proper scheduling, prevents conflicts, and maintains
-            accurate reservation records.
-        </p>
+
+        <div class="card-header">
+            <i class="fa-solid fa-circle-info"></i>
+            <h3>Reservations Overview</h3>
+        </div>
+
+        <ul>
+            <li>The Reservations Management module handles the complete lifecycle of reservation requests.</li>
+            <li>Borrowers submit reservation requests for equipment, facilities, or resources through the system.</li>
+            <li>Administrators review, approve, reject, or schedule reservations to avoid conflicts.</li>
+            <li>Reservation statuses, schedules, and histories are tracked and stored centrally.</li>
+            <li>This module ensures organized resource usage, accurate scheduling, and accountability.</li>
+        </ul>
+
     </div>
+
 </section>
 
 <!-- BORROWER -->
@@ -320,6 +344,102 @@
                 <p>The request status is updated accordingly.</p>
             </div>
         </div>
+    </div>
+</section>
+
+<section id="reservation-approval" class="steps-section">
+    <div class="section-header">
+        <span>ADMIN PROCESS</span>
+        <h2>Approving and Denying Reservation Requests</h2>
+    </div>
+
+    <div class="timeline">
+        <div class="timeline-item">
+            <div class="timeline-number">1</div>
+            <div class="timeline-content">
+                <h3>Open Pending Requests</h3>
+                <p>The administrator navigates to the Reservations dashboard and views all pending requests.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-number">2</div>
+            <div class="timeline-content">
+                <h3>Review Request Details</h3>
+                <p>Reservation details such as resource type, date, duration, and requester information are reviewed.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-number">3</div>
+            <div class="timeline-content">
+                <h3>Approve or Deny</h3>
+                <p>The administrator approves valid requests or denies conflicting or invalid submissions.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-number">4</div>
+            <div class="timeline-content">
+                <h3>Status Update</h3>
+                <p>The reservation status is updated automatically and reflected on the borrower’s account.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="reservation-deployment" class="steps-section">
+    <div class="section-header">
+        <span>ADMIN PROCESS</span>
+        <h2>Deploying Approved Reservations</h2>
+    </div>
+
+    <div class="timeline">
+        <div class="timeline-item">
+            <div class="timeline-number">1</div>
+            <div class="timeline-content">
+                <h3>Access Approved Requests</h3>
+                <p>The administrator filters reservations marked as Approved.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-number">2</div>
+            <div class="timeline-content">
+                <h3>Prepare Resource</h3>
+                <p>The reserved equipment or facility is prepared for deployment based on the scheduled date.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-number">3</div>
+            <div class="timeline-content">
+                <h3>Deploy Reservation</h3>
+                <p>The reservation is officially deployed and marked as Active or In Use.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="reservation-tracking" class="user-info-section">
+    <div class="section-header">
+        <span>MONITORING</span>
+        <h2>Tracking and Managing Reservations</h2>
+    </div>
+
+    <div class="user-info-card">
+        <div class="card-header">
+            <i class="fa-solid fa-chart-line"></i>
+            <h3>Reservation Monitoring</h3>
+        </div>
+
+        <ul>
+            <li>View all reservations by status: Pending, Approved, Active, Completed, or Rejected</li>
+            <li>Track ongoing and upcoming reservations in real time</li>
+            <li>Maintain historical reservation records</li>
+            <li>Ensure accountability and proper resource utilization</li>
+            <li>Generate reports for audit and planning purposes</li>
+        </ul>
     </div>
 </section>
 
