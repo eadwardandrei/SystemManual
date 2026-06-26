@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TechReserve Manual</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/docs_css/reports-analytics.css">
+<link rel="icon" type="image/png" href="../images/TechReserve_Logo 1.png">
+    <script src="https://kit.fontawesome.com/cc0199301c.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+<div class="layout">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <header class="sidebar-header">
+            <div class="sidebar-top">
+                <img src="../images/TechReserve_Logo 1.png" alt="TechReserve Logo" class="logo">
+
+                <button class="sidebar-toggle" id="sidebarToggle">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+
+            <h2>
+                <span class="sidebar-text1">Tech</span><span class="sidebar-text2">Reserve</span>
+            </h2>
+
+            <div class="manual-text">SYSTEM MANUAL</div>
+        </header>
+
+        <div class="sidebar-search">
+            <input type="text" class="search-box" placeholder="Search manual...">
+        </div>
+
+        <nav class="menu">
+
+
+        <a href="../index.html" class="menu-link">
+        <span class="menu-icon"><i class="fa-regular fa-house"></i></span>
+        <span class="menu-text">Introduction</span>
+        </a>
+
+        <a href="../index.html#capabilities" class="menu-link active">
+        <span class="menu-icon"><i class="fa-solid fa-gears"></i></span>
+        <span class="menu-text">System Capabilities</span>
+        </a>
+
+        <!-- FOR USERS -->
+        <a href="../index.html#users" class="menu-link">
+            <span class="menu-icon"><i class="fa-regular fa-face-smile"></i></span>
+            <span class="menu-text">For Users</span>
+        </a>
+
+        <!-- FOR ADMINS -->
+        <a href="../index.html#admins" class="menu-link">
+            <span class="menu-icon"><i class="fa-solid fa-face-smile"></i></span>
+            <span class="menu-text">For Administrators</span>
+        </a>
+
+        <!--
+        <a href="../index.html#manual-guides" class="menu-link">
+            <span class="menu-icon"><i class="fa-solid fa-chalkboard"></i></span>
+            <span class="menu-text">Manual Guides</span>
+        </a>
+        -->
+
+        <!-- SYSTEM MODULES -->
+        <a href="../index.html#system-modules" class="menu-link">
+            <span class="menu-icon"><i class="fa-solid fa-align-right"></i></span>
+            <span class="menu-text">System Modules</span>
+        </a>
+
+        <a href="../index.html#about" class="menu-link">
+            <span class="menu-icon"><i class="fa-solid fa-ellipsis"></i></span>
+            <span class="menu-text">About</span>
+        </a>
+
+        <a href="../index.html#account-hierarchy" class="menu-link">
+            <span class="menu-icon"><i class="fa-regular fa-circle-dot"></i></span>
+            <span class="menu-text">Account Hierarchy</span>
+        </a>
+
+        <a href="../index.html#faq" class="menu-link">
+            <span class="menu-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+            <span class="menu-text">FAQ</span>
+        </a>
+
+        <a href="../index.html#contributors" class="menu-link">
+            <span class="menu-icon"><i class="fa-regular fa-circle-question"></i></span>
+            <span class="menu-text">Contributors</span>
+        </a>
+
+    </nav>
+
+        <div class="help-box">
+            <p class="help-title">Need Help?</p>
+            <p>Email: datamstechreserve@gmail.com</p>
+        </div>
+    
+    <div class="sidebar-resizer" id="sidebarResizer"></div>
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+<main class="content">
+
+   <!-- TOP NAVIGATION -->
+    <div class="page-navigation">
+
+        <button class="back-btn" onclick="history.back()">
+            <i class="fa-solid fa-arrow-left"></i>
+            Back
+        </button>
+
+        <div class="breadcrumb">
+            <a href="../index.html">Introduction</a>
+            <i class="fa-solid fa-chevron-right"></i>
+            <strong>Reports and Analytics</strong>
+        </div>
+
+    </div>
+
+       <!-- RBAC HERO -->
+<section class="guide-hero">
+
+    <div class="hero-shape shape-1"></div>
+    <div class="hero-shape shape-2"></div>
+
+    <div class="guide-hero-content">
+
+        <span class="guide-badge">
+            <i class="fa-solid fa-chart-column"></i>
+            Reports & Analytics
+        </span>
+
+        <h1>Reports and Analytics Module</h1>
+
+        <p>
+            The Reports and Analytics module provides administrators with
+            real-time insights, usage summaries, and historical data to
+            support decision-making, monitoring, and system evaluation.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- QUICK LINKS -->
+<section class="quick-links">
+
+    <a href="#module-overview">
+        <i class="fa-solid fa-layer-group"></i>
+        Module Overview
+    </a>
+
+    <a href="#reports-dashboard">
+        <i class="fa-solid fa-table-list"></i>
+        Reports Dashboard
+    </a>
+
+    <a href="#analytics-insights">
+        <i class="fa-solid fa-chart-line"></i>
+        Analytics Insights
+    </a>
+
+    <a href="#reservation-reports">
+        <i class="fa-solid fa-calendar-check"></i>
+        Reservation Reports
+    </a>
+
+    <a href="#user-reports">
+        <i class="fa-solid fa-users"></i>
+        User Reports
+    </a>
+
+    <a href="#exporting-reports">
+        <i class="fa-solid fa-file-export"></i>
+        Exporting Reports
+    </a>
+
+</section>
+
+<!-- OVERVIEW -->
+<section id="module-overview" class="user-info-section">
+
+    <div class="section-header">
+        <span>OVERVIEW</span>
+        <h2>Reports and Analytics Overview</h2>
+    </div>
+
+    <div class="user-info-card">
+
+        <div class="card-header">
+            <i class="fa-solid fa-circle-info"></i>
+            <h3>Module Overview</h3>
+        </div>
+
+        <ul>
+            <li>The Reports and Analytics module consolidates system data into structured reports and visual summaries.</li>
+            <li>Administrators can monitor reservation activity, user behavior, and resource utilization.</li>
+            <li>Reservation histories and trends are displayed through tables, charts, and summaries.</li>
+            <li>Data supports operational planning, policy evaluation, and accountability.</li>
+            <li>Reports can be exported for documentation, audits, and administrative review.</li>
+        </ul>
+
+    </div>
+
+</section>
+
+<section id="reports-dashboard" class="user-info-section">
+
+    <div class="section-header">
+        <span>REPORTS</span>
+        <h2>Reports Dashboard</h2>
+    </div>
+
+    <div class="user-info-card">
+
+    <div class="card-header">
+        <i class="fa-solid fa-table-list"></i>
+        <h3>Reports Dashboard Overview</h3>
+    </div>
+
+    <ul>
+        <li>Displays summarized system data including total reservations, active requests, and completed transactions.</li>
+        <li>Provides real-time visibility of system usage and operational performance.</li>
+        <li>Supports administrative monitoring and data-driven decision-making.</li>
+    </ul>
+
+
+</div>
+
+</section>
+
+<section id="analytics-insights" class="user-info-section">
+
+    <div class="section-header">
+        <span>ANALYTICS</span>
+        <h2>Analytics and Insights</h2>
+    </div>
+
+    <div class="user-info-card">
+
+    <div class="card-header">
+        <i class="fa-solid fa-chart-line"></i>
+        <h3>Analytics and Insights</h3>
+    </div>
+
+    <ul>
+        <li>Visual charts present reservation trends across specific dates and time ranges.</li>
+        <li>Usage patterns highlight peak reservation periods and high-demand resources.</li>
+        <li>Frequently reserved equipment and facilities are automatically identified.</li>
+        <li>Insights assist administrators in improving scheduling efficiency and resource allocation.</li>
+    </ul>
+
+
+</div>
+
+<h4 style="margin-top:22px; color:#1f6f54;">Analytics Models Used</h4>
+
+<div class="analytics-cards analytics-advanced">
+
+    <div class="role-card model-card predictive">
+        <span class="model-badge">Predictive</span>
+        <div class="feature-icon deployed">
+        <i class="fa-solid fa-wave-square"></i>
+        </div>
+        <h5>SARIMA (Time Series Forecasting)</h5>
+        <p>
+            Forecasts future reservation demand by analyzing
+            seasonal patterns, trends, and historical time-based data.
+        </p>
+    </div>
+
+    <div class="role-card model-card predictive">
+        <span class="model-badge">Predictive</span>
+        <div class="feature-icon register">
+        <i class="fa-solid fa-tree"></i>
+        </div>
+        <h5>Random Forest</h5>
+        <p>
+            Predicts reservation outcomes and usage likelihood
+            by learning from multiple decision trees and system variables.
+        </p>
+    </div>
+
+    <div class="role-card model-card predictive">
+        <span class="model-badge">Predictive</span>
+        <div class="feature-icon profile">
+        <i class="fa-solid fa-chart-line"></i>
+        </div>
+        <h5>Time Series Analysis</h5>
+        <p>
+            Analyzes historical reservation sequences to detect
+            trends, peaks, and recurring usage behaviors over time.
+        </p>
+    </div>
+
+    <div class="role-card model-card prescriptive">
+        <span class="model-badge prescriptive-badge">Prescriptive</span>
+        <div class="feature-icon login">
+        <i class="fa-solid fa-diagram-project"></i>
+        </div>
+        <h5>Binary Linear Programming</h5>
+        <p>
+            Optimizes resource allocation and scheduling decisions
+            by evaluating constraints and generating optimal outcomes.
+        </p>
+    </div>
+
+</div>
+
+</section>
+
+<section id="reservation-reports" class="user-info-section">
+
+    <div class="section-header">
+        <span>RESERVATIONS</span>
+        <h2>Reservation Reports</h2>
+    </div>
+
+    <div class="user-info-card">
+        <ul>
+            <li>View lists of pending, approved, denied, and completed reservations.</li>
+            <li>Filter reports by date range, resource type, or status.</li>
+            <li>Track reservation lifecycles from request to completion.</li>
+        </ul>
+    </div>
+
+</section>
+
+<section id="user-reports" class="user-info-section">
+
+    <div class="section-header">
+        <span>USERS</span>
+        <h2>User-Based Reports</h2>
+    </div>
+
+    <div class="user-info-card">
+        <ul>
+            <li>Analyze reservation activity per borrower or department.</li>
+            <li>Identify frequent users and high-demand resources.</li>
+            <li>Support accountability and policy enforcement.</li>
+        </ul>
+    </div>
+
+</section>
+
+<section id="exporting-reports" class="user-info-section">
+
+    <div class="section-header">
+        <span>EXPORT</span>
+        <h2>Exporting Reports</h2>
+    </div>
+
+    <div class="user-info-card">
+
+    <div class="card-header">
+        <i class="fa-solid fa-file-export"></i>
+        <h3>Exporting Reports</h3>
+    </div>
+
+    <ul>
+        <li>Reports can be exported for offline review, documentation, and administrative reporting.</li>
+        <li>Exported files support audits, presentations, and institutional record-keeping.</li>
+        <li>Ensures data portability while maintaining system security and integrity.</li>
+    </ul>
+
+
+</div>
+
+<div class="timeline">
+<h4 style="margin-top:18px; color:#1f6f54;">Steps to Export Reports</h4>
+
+
+    <div class="timeline-item">
+        <span class="timeline-number">1</span>
+        <div class="timeline-content">
+            <h5>Access the Reports Module</h5>
+            <p>
+                Navigate to the <strong>Reports and Analytics</strong>
+                module from the administrator dashboard.
+            </p>
+        </div>
+    </div>
+
+    <div class="timeline-item">
+        <span class="timeline-number">2</span>
+        <div class="timeline-content">
+            <h5>Select Report Type</h5>
+            <p>
+                Choose between <strong>Reservation Reports</strong>
+                or <strong>User-Based Reports</strong>.
+            </p>
+        </div>
+    </div>
+
+    <div class="timeline-item">
+        <span class="timeline-number">3</span>
+        <div class="timeline-content">
+            <h5>Apply Filters</h5>
+            <p>
+                Set date ranges, resource types,
+                or reservation status if needed.
+            </p>
+        </div>
+    </div>
+
+    <div class="timeline-item">
+        <span class="timeline-number">4</span>
+        <div class="timeline-content">
+            <h5>Export the Data</h5>
+            <p>
+                Click the <strong>Export</strong> or
+                <strong>Download</strong> button.
+            </p>
+        </div>
+    </div>
+
+    <div class="timeline-item">
+        <span class="timeline-number">5</span>
+        <div class="timeline-content">
+            <h5>Save the File</h5>
+            <p>
+                Choose the preferred format (PDF or spreadsheet)
+                and save the file locally.
+            </p>
+        </div>
+    </div>
+
+
+</div>
+
+
+</section>
+
+
+    <footer>
+        © 2026 TechReserve. All rights reserved.
+    </footer>
+
+</main>
+
+</div>
+
+<script src="../js/docs_js/reports-analytics.js"></script>
+
+</body>
+</html>
