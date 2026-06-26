@@ -1438,15 +1438,15 @@ html, body {
    =============================== */
 
 .contributors-section {
+    margin: 40px 0;
+    padding: 30px;
+    border-radius: 20px;
+    margin-top: 10px;
     background: linear-gradient(
         180deg,
         #ffffff,
         #f6faf8
     );
-    margin: 40px 0;
-    padding: 30px;
-    border-radius: 20px;
-    margin-top: 10px;
 }
 
 .contributors-intro {
