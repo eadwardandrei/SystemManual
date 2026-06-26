@@ -334,6 +334,270 @@ body {
     text-decoration: none;
 }
 
+/* GUIDE HERO */
+
+.guide-hero {
+    position: relative;
+    overflow: hidden;
+
+    background:
+    linear-gradient(
+        135deg,
+        #1f6f54,
+        #3dcb9a
+    );
+
+    color: white;
+
+    padding: 60px;
+    border-radius: 30px;
+
+    margin-bottom: 40px;
+}
+
+.guide-hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.intro-section {
+    margin: 40px 0;
+    padding: 30px;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+.guide-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 10px 18px;
+
+    border-radius: 999px;
+
+    background: rgba(255,255,255,.15);
+
+    color: white;
+
+    margin-bottom: 20px;
+}
+
+.guide-hero h1 {
+    font-size: 64px;
+    margin-bottom: 16px;
+}
+
+.guide-hero p {
+    max-width: 700px;
+
+    color: rgba(255,255,255,.9);
+
+    font-size: 18px;
+
+    line-height: 1.8;
+}
+
+.hero-shape {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255,255,255,.08);
+}
+
+.shape-1 {
+    width: 260px;
+    height: 260px;
+
+    top: -80px;
+    right: -60px;
+}
+
+.shape-2 {
+    width: 180px;
+    height: 180px;
+
+    bottom: -50px;
+    left: 60%;
+}
+
+/* QUICK START */
+
+.quick-links {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 15px;
+
+    margin-bottom: 50px;
+}
+
+.quick-links a {
+    background: white;
+
+    padding: 14px 18px;
+
+    border-radius: 16px;
+
+    text-decoration: none;
+
+    color: #1f6f54;
+
+    font-weight: 600;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    box-shadow:
+    0 6px 20px rgba(0,0,0,.05);
+
+    transition: .25s;
+}
+
+.quick-links a:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+    0 12px 24px rgba(0,0,0,.08);
+}
+
+.card {
+    background: white;
+    border-radius: 20px;
+    padding: 28px;
+    box-shadow: 0 8px 22px rgba(0,0,0,.06);
+}
+
+
+
+/* ==================================
+   CONSISTENT SECTION HEADERS
+================================== */
+
+.section-header {
+    margin-bottom: 35px;
+}
+
+.section-header span {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: #1f6f54;
+    margin-bottom: 10px;
+}
+
+.section-header h2 {
+    font-size: 34px;
+    font-weight: 700;
+    color: #1f6f54;
+    line-height: 1.2;
+}
+
+
+/* USER INFO SECTION (Borrower / Admin Overview) */
+
+.user-info-section {
+    margin-top: 80px;
+}
+
+.user-info-card {
+    background: white;
+    padding: 30px;
+    border-radius: 22px;
+    box-shadow: 0 10px 26px rgba(0,0,0,.06);
+}
+
+.user-info-card .card-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 18px;
+}
+
+.user-info-card .card-header i {
+    font-size: 20px;
+    color: #1f6f54;
+    background: rgba(31,111,84,.12);
+    padding: 12px;
+    border-radius: 14px;
+}
+
+.user-info-card h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1f6f54;
+}
+
+.user-info-card ul {
+    margin-top: 10px;
+    padding-left: 18px;
+}
+
+.user-info-card ul li {
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: #444;
+    line-height: 1.6;
+}
+
+/* ===============================
+   STEPS / TIMELINE (IDENTICAL)
+=============================== */
+.steps-section {
+    margin-top: 80px;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.timeline-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 22px;
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 8px 22px rgba(0,0,0,.06);
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.timeline-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 28px rgba(0,0,0,.08);
+}
+
+.timeline-number {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #1f6f54;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.timeline-content h3 {
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 6px;
+    color: #1f6f54;
+}
+
+.timeline-content p {
+    font-size: 13px;
+    line-height: 1.7;
+    color: #444;
+}
+
+
 /* ===============================
    FOOTER
    =============================== */
