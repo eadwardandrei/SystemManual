@@ -213,25 +213,80 @@
 <section id="reports-dashboard" class="user-info-section">
 
     <div class="section-header">
-        <span>REPORTS</span>
+        <span>REPORTS & ANALYTICS</span>
         <h2>Reports Dashboard</h2>
+        <p class="section-subtext">
+            A centralized view of system performance, resource utilization, and operational risks.
+        </p>
     </div>
 
-    <div class="user-info-card">
+    <div class="reports-grid">
 
-    <div class="card-header">
-        <i class="fa-solid fa-table-list"></i>
-        <h3>Reports Dashboard Overview</h3>
+        <!-- Total Overview -->
+        <div class="report-card">
+            <div class="card-header">
+                <i class="fa-solid fa-chart-pie"></i>
+                <h3>Total Overview</h3>
+            </div>
+            <ul>
+                <li>Total Users</li>
+                <li>Pending Requests</li>
+                <li>Approved Requests</li>
+                <li>Active Equipment & Facilities</li>
+                <li>Under Maintenance Resources</li>
+                <li>Overdue Equipment</li>
+            </ul>
+        </div>
+
+        <!-- Resource Utilization -->
+        <div class="report-card">
+            <div class="card-header">
+                <i class="fa-solid fa-gauge-high"></i>
+                <h3>Resource Utilization</h3>
+            </div>
+            <p>
+                Tracks how frequently facilities and equipment are being used,
+                helping administrators optimize availability and allocation.
+            </p>
+        </div>
+
+        <!-- Facility Status Overview -->
+        <div class="report-card">
+            <div class="card-header">
+                <i class="fa-solid fa-building-circle-check"></i>
+                <h3>Facility Status Overview</h3>
+            </div>
+            <p>
+                Provides real-time visibility into facility conditions including
+                availability, active use, and maintenance status.
+            </p>
+        </div>
+
+        <!-- Readiness Risk Alerts -->
+        <div class="report-card alert-card">
+            <div class="card-header">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                <h3>Readiness Risk Alerts</h3>
+            </div>
+            <p>
+                Highlights potential operational risks such as overdue equipment,
+                unavailable facilities, and maintenance backlogs.
+            </p>
+        </div>
+
+        <!-- System Activity Overview -->
+        <div class="report-card">
+            <div class="card-header">
+                <i class="fa-solid fa-clock-rotate-left"></i>
+                <h3>System Activity Overview</h3>
+            </div>
+            <p>
+                Summarizes recent administrative actions, reservations, approvals,
+                and system updates for effective monitoring and auditing.
+            </p>
+        </div>
+
     </div>
-
-    <ul>
-        <li>Displays summarized system data including total reservations, active requests, and completed transactions.</li>
-        <li>Provides real-time visibility of system usage and operational performance.</li>
-        <li>Supports administrative monitoring and data-driven decision-making.</li>
-    </ul>
-
-
-</div>
 
 </section>
 
