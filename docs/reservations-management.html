@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TechReserve Manual</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/docs_css/reservations-management.css">
+<link rel="icon" type="image/png" href="../images/TechReserve_Logo 1.png">
+    <script src="https://kit.fontawesome.com/cc0199301c.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+<div class="layout">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <header class="sidebar-header">
+            <div class="sidebar-top">
+                <img src="../images/TechReserve_Logo 1.png" alt="TechReserve Logo" class="logo">
+
+                <button class="sidebar-toggle" id="sidebarToggle">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+
+            <h2>
+                <span class="sidebar-text1">Tech</span><span class="sidebar-text2">Reserve</span>
+            </h2>
+
+            <div class="manual-text">SYSTEM MANUAL</div>
+        </header>
+
+        <div class="sidebar-search">
+            <input type="text" class="search-box" placeholder="Search manual...">
+        </div>
+
+        <nav class="menu">
+
+
+        <a href="../index.html" class="menu-link">
+        <span class="menu-icon"><i class="fa-regular fa-house"></i></span>
+        <span class="menu-text">Introduction</span>
+        </a>
+
+        <a href="../index.html#capabilities" class="menu-link active">
+        <span class="menu-icon"><i class="fa-solid fa-gears"></i></span>
+        <span class="menu-text">System Capabilities</span>
+        </a>
+
+        <!-- FOR USERS -->
+        <a href="../index.html#users" class="menu-link">
+            <span class="menu-icon"><i class="fa-regular fa-face-smile"></i></span>
+            <span class="menu-text">For Users</span>
+        </a>
+
+        <!-- FOR ADMINS -->
+        <a href="../index.html#admins" class="menu-link">
+            <span class="menu-icon"><i class="fa-solid fa-face-smile"></i></span>
+            <span class="menu-text">For Administrators</span>
+        </a>
+
+        <!--
+        <a href="../index.html#manual-guides" class="menu-link">
+            <span class="menu-icon"><i class="fa-solid fa-chalkboard"></i></span>
+            <span class="menu-text">Manual Guides</span>
+        </a>
+        -->
+
+        <!-- SYSTEM MODULES -->
+        <a href="../index.html#system-modules" class="menu-link">
+            <span class="menu-icon"><i class="fa-solid fa-align-right"></i></span>
+            <span class="menu-text">System Modules</span>
+        </a>
+
+        <a href="../index.html#about" class="menu-link">
+            <span class="menu-icon"><i class="fa-solid fa-ellipsis"></i></span>
+            <span class="menu-text">About</span>
+        </a>
+
+        <a href="../index.html#account-hierarchy" class="menu-link">
+            <span class="menu-icon"><i class="fa-regular fa-circle-dot"></i></span>
+            <span class="menu-text">Account Hierarchy</span>
+        </a>
+
+        <a href="../index.html#faq" class="menu-link">
+            <span class="menu-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+            <span class="menu-text">FAQ</span>
+        </a>
+
+        <a href="../index.html#contributors" class="menu-link">
+            <span class="menu-icon"><i class="fa-regular fa-circle-question"></i></span>
+            <span class="menu-text">Contributors</span>
+        </a>
+
+    </nav>
+
+        <div class="help-box">
+            <p class="help-title">Need Help?</p>
+            <p>Email: datamstechreserve@gmail.com</p>
+        </div>
+    
+    <div class="sidebar-resizer" id="sidebarResizer"></div>
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+<main class="content">
+
+   <!-- TOP NAVIGATION -->
+    <div class="page-navigation">
+
+        <button class="back-btn" onclick="history.back()">
+            <i class="fa-solid fa-arrow-left"></i>
+            Back
+        </button>
+
+        <div class="breadcrumb">
+            <a href="../index.html">Introduction</a>
+            <i class="fa-solid fa-chevron-right"></i>
+            <strong>Reservations Management</strong>
+        </div>
+
+    </div>
+
+           <!-- RBAC HERO -->
+<section class="guide-hero">
+
+    <div class="hero-shape shape-1"></div>
+    <div class="hero-shape shape-2"></div>
+
+    <div class="guide-hero-content">
+
+        <span class="guide-badge">
+        <i class="fa-solid fa-calendar-check"></i>
+        Reservations Management
+        </span>
+
+    <h1>Reservations Management Module</h1>
+
+        <p>
+            The Reservations Management module facilitates the creation,
+            monitoring, and approval of reservation requests within TechReserve.
+            It ensures efficient scheduling, prevents conflicts, and maintains
+            accountability between borrowers and administrators.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- QUICK LINKS -->
+<section class="quick-links">
+    <a href="#module-overview"><i class="fa-solid fa-layer-group"></i>Module Overview</a>
+    <a href="#borrower-reservations"><i class="fa-solid fa-user"></i>Borrower Reservations</a>
+    <a href="#reservation-create"><i class="fa-solid fa-calendar-plus"></i>Create Reservation</a>
+    <a href="#reservation-status"><i class="fa-solid fa-clock"></i>Reservation Status</a>
+    <a href="#admin-reservations"><i class="fa-solid fa-user-shield"></i>Admin Control</a>
+    <a href="#reservation-approval"><i class="fa-solid fa-check-double"></i>Approval Workflow</a>
+</section>
+
+<!-- OVERVIEW -->
+<section id="module-overview" class="user-info-section">
+    <div class="section-header">
+        <span>OVERVIEW</span>
+        <h2>Managing Reservations</h2>
+    </div>
+
+    <div class="user-info-card">
+        <p class="role-desc">
+            This module manages the full reservation lifecycle — from
+            borrower submission to administrative approval and completion.
+            It ensures proper scheduling, prevents conflicts, and maintains
+            accurate reservation records.
+        </p>
+    </div>
+</section>
+
+<!-- BORROWER -->
+<section id="borrower-reservations" class="user-info-section">
+    <div class="section-header">
+        <span>USER ACCESS</span>
+        <h2>Borrower Reservation Features</h2>
+    </div>
+
+    <div class="user-info-card">
+        <div class="card-header">
+            <i class="fa-solid fa-user"></i>
+            <h3>Borrower Capabilities</h3>
+        </div>
+
+        <ul>
+            <li>Submit reservation requests for available resources</li>
+            <li>Select preferred dates and time slots</li>
+            <li>View current and past reservations</li>
+            <li>Track approval status</li>
+            <li>Cancel pending reservations when permitted</li>
+        </ul>
+    </div>
+</section>
+
+<!-- CREATE -->
+<section id="reservation-create" class="steps-section">
+    <div class="section-header">
+        <span>STEP-BY-STEP</span>
+        <h2>Creating a Reservation</h2>
+    </div>
+
+    <div class="timeline">
+        <div class="timeline-item">
+            <div class="timeline-number">1</div>
+            <div class="timeline-content">
+                <h3>Open Reservations</h3>
+                <p>The borrower navigates to the Reservations module.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-number">2</div>
+            <div class="timeline-content">
+                <h3>Select Resource</h3>
+                <p>An available item or venue is selected.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-number">3</div>
+            <div class="timeline-content">
+                <h3>Choose Schedule</h3>
+                <p>Date and time are selected and validated.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-number">4</div>
+            <div class="timeline-content">
+                <h3>Submit Request</h3>
+                <p>The reservation is submitted with a Pending status.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- STATUS -->
+<section id="reservation-status" class="steps-section">
+    <div class="section-header">
+        <span>TRACKING</span>
+        <h2>Reservation Status Monitoring</h2>
+    </div>
+
+    <div class="timeline">
+        <div class="timeline-item">
+            <div class="timeline-number">1</div>
+            <div class="timeline-content">
+                <h3>View Reservations</h3>
+                <p>Borrowers view submitted reservations.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-number">2</div>
+            <div class="timeline-content">
+                <h3>Status Updates</h3>
+                <p>Status reflects Pending, Approved, Rejected, or Completed.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ADMIN -->
+<section id="admin-reservations" class="user-info-section">
+    <div class="section-header">
+        <span>ADMINISTRATIVE ACCESS</span>
+        <h2>Administrator Oversight</h2>
+    </div>
+
+    <div class="user-info-card">
+        <div class="card-header">
+            <i class="fa-solid fa-user-shield"></i>
+            <h3>Administrator Responsibilities</h3>
+        </div>
+
+        <ul>
+            <li>Review reservation requests</li>
+            <li>Approve or reject submissions</li>
+            <li>Prevent scheduling conflicts</li>
+            <li>Monitor reservation activity</li>
+        </ul>
+    </div>
+</section>
+
+<!-- APPROVAL -->
+<section id="reservation-approval" class="steps-section">
+    <div class="section-header">
+        <span>WORKFLOW</span>
+        <h2>Reservation Approval Process</h2>
+    </div>
+
+    <div class="timeline">
+        <div class="timeline-item">
+            <div class="timeline-number">1</div>
+            <div class="timeline-content">
+                <h3>Review Request</h3>
+                <p>Administrators open pending reservations.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-number">2</div>
+            <div class="timeline-content">
+                <h3>Validate Details</h3>
+                <p>Availability and request details are verified.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-number">3</div>
+            <div class="timeline-content">
+                <h3>Approve or Reject</h3>
+                <p>The request status is updated accordingly.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <footer>
+        © 2026 TechReserve. All rights reserved.
+    </footer>
+
+</main>
+
+</div>
+
+<script src="../js/docs_js/reservations-management.js"></script>
+
+</body>
+</html>
