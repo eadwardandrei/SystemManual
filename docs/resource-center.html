@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TechReserve Manual</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/docs_css/resource-center.css"> 
+<link rel="icon" type="image/png" href="../images/TechReserve_Logo 1.png">
+    <script src="https://kit.fontawesome.com/cc0199301c.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+<div class="layout">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <header class="sidebar-header">
+            <div class="sidebar-top">
+                <img src="../images/TechReserve_Logo 1.png" alt="TechReserve Logo" class="logo">
+
+                <button class="sidebar-toggle" id="sidebarToggle">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+
+            <h2>
+                <span class="sidebar-text1">Tech</span><span class="sidebar-text2">Reserve</span>
+            </h2>
+
+            <div class="manual-text">SYSTEM MANUAL</div>
+        </header>
+
+        <div class="sidebar-search">
+            <input type="text" class="search-box" placeholder="Search manual...">
+        </div>
+
+        <nav class="menu">
+
+
+        <a href="../index.html" class="menu-link">
+        <span class="menu-icon"><i class="fa-regular fa-house"></i></span>
+        <span class="menu-text">Introduction</span>
+        </a>
+
+        <a href="../index.html#capabilities" class="menu-link active">
+        <span class="menu-icon"><i class="fa-solid fa-gears"></i></span>
+        <span class="menu-text">System Capabilities</span>
+        </a>
+
+        <!-- FOR USERS -->
+        <a href="../index.html#users" class="menu-link">
+            <span class="menu-icon"><i class="fa-regular fa-face-smile"></i></span>
+            <span class="menu-text">For Users</span>
+        </a>
+
+        <!-- FOR ADMINS -->
+        <a href="../index.html#admins" class="menu-link">
+            <span class="menu-icon"><i class="fa-solid fa-face-smile"></i></span>
+            <span class="menu-text">For Administrators</span>
+        </a>
+
+        <!--
+        <a href="../index.html#manual-guides" class="menu-link">
+            <span class="menu-icon"><i class="fa-solid fa-chalkboard"></i></span>
+            <span class="menu-text">Manual Guides</span>
+        </a>
+        -->
+
+        <!-- SYSTEM MODULES -->
+        <a href="../index.html#system-modules" class="menu-link">
+            <span class="menu-icon"><i class="fa-solid fa-align-right"></i></span>
+            <span class="menu-text">System Modules</span>
+        </a>
+
+        <a href="../index.html#about" class="menu-link">
+            <span class="menu-icon"><i class="fa-solid fa-ellipsis"></i></span>
+            <span class="menu-text">About</span>
+        </a>
+
+        <a href="../index.html#account-hierarchy" class="menu-link">
+            <span class="menu-icon"><i class="fa-regular fa-circle-dot"></i></span>
+            <span class="menu-text">Account Hierarchy</span>
+        </a>
+
+        <a href="../index.html#faq" class="menu-link">
+            <span class="menu-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+            <span class="menu-text">FAQ</span>
+        </a>
+
+        <a href="../index.html#contributors" class="menu-link">
+            <span class="menu-icon"><i class="fa-regular fa-circle-question"></i></span>
+            <span class="menu-text">Contributors</span>
+        </a>
+
+    </nav>
+
+        <div class="help-box">
+            <p class="help-title">Need Help?</p>
+            <p>Email: datamstechreserve@gmail.com</p>
+        </div>
+    
+    <div class="sidebar-resizer" id="sidebarResizer"></div>
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+<main class="content">
+
+   <!-- TOP NAVIGATION -->
+    <div class="page-navigation">
+
+        <button class="back-btn" onclick="history.back()">
+            <i class="fa-solid fa-arrow-left"></i>
+            Back
+        </button>
+
+        <div class="breadcrumb">
+            <a href="../index.html">Introduction</a>
+            <i class="fa-solid fa-chevron-right"></i>
+            <strong>Resource Center Module</strong>
+        </div>
+
+    </div>
+
+               <!-- RBAC HERO -->
+<section class="guide-hero">
+
+    <div class="hero-shape shape-1"></div>
+    <div class="hero-shape shape-2"></div>
+
+    <div class="guide-hero-content">
+
+        <span class="guide-badge">
+        <i class="fa-solid fa-calendar-check"></i>
+        Resource Center
+        </span>
+
+    <h1>Resource Center Module</h1>
+
+<p>
+    The Resource Center module serves as a centralized hub for managing,
+    organizing, and accessing all reservable resources within TechReserve.
+    It enables administrators to maintain accurate resource information
+    while allowing users to easily browse availability and specifications.
+</p>
+
+    </div>
+
+</section>
+
+<!-- QUICK LINKS -->
+<section class="quick-links">
+    <a href="#resource-overview">
+        <i class="fa-solid fa-circle-info"></i>
+        Overview
+    </a>
+
+    <a href="#resource-capabilities">
+        <i class="fa-solid fa-boxes-stacked"></i>
+        Capabilities
+    </a>
+
+    <a href="#resource-users">
+        <i class="fa-regular fa-user"></i>
+        For Users
+    </a>
+
+    <a href="#resource-admins">
+        <i class="fa-solid fa-user-shield"></i>
+        For Admins
+    </a>
+
+    <a href="#resource-workflow">
+        <i class="fa-solid fa-diagram-project"></i>
+        Workflow
+    </a>
+
+    <a href="#resource-best-practices">
+        <i class="fa-solid fa-star"></i>
+        Best Practices
+    </a>
+</section>
+
+<section id="resource-overview" class="user-info-section">
+    <div class="section-header">
+        <span>OVERVIEW</span>
+        <h2>What is the Resource Center?</h2>
+    </div>
+
+    <div class="user-info-card">
+        <p>
+            The Resource Center acts as the foundation of the TechReserve system.
+            All equipment, venues, and reservable assets are registered, categorized,
+            and maintained here to ensure accurate availability and efficient
+            reservation handling.
+        </p>
+    </div>
+</section>
+
+
+
+<section id="resource-capabilities" class="user-info-section">
+    <div class="section-header">
+        <span>CAPABILITIES</span>
+        <h2>Resource Center Features</h2>
+    </div>
+
+    <div class="user-info-card">
+        <p>
+            The Resource Center provides a comprehensive set of tools for managing reservable resources.
+            Administrators can create, update, and delete resource records, while users can browse,
+            search, and reserve available assets.
+        </p>
+    </div>
+</section>
+
+<section id="resource-users" class="user-info-section">
+    <div class="section-header">
+        <span>FOR USERS</span>
+        <h2>How Users Interact with Resources</h2>
+    </div>
+
+    <div class="user-info-card">
+        <ul>
+            <li>Browse available equipment and venues.</li>
+            <li>View detailed descriptions and usage notes.</li>
+            <li>Check availability before submitting reservations.</li>
+            <li>Select appropriate resources for academic or organizational use.</li>
+        </ul>
+    </div>
+</section>
+
+<section id="resource-admins" class="user-info-section">
+    <div class="section-header">
+        <span>FOR ADMINISTRATORS</span>
+        <h2>Administrative Resource Control</h2>
+    </div>
+
+    <div class="user-info-card">
+        <ul>
+            <li>Create and maintain resource records.</li>
+            <li>Update status, condition, and availability.</li>
+            <li>Deactivate resources undergoing maintenance.</li>
+            <li>Ensure accuracy of resource-related data across modules.</li>
+        </ul>
+    </div>
+</section>
+
+<section id="resource-workflow" class="steps-section">
+    <div class="section-header">
+        <span>PROCESS</span>
+        <h2>Resource Lifecycle Workflow</h2>
+    </div>
+
+    <div class="timeline">
+        <div class="timeline-item">
+            <div class="timeline-number">1</div>
+            <div class="timeline-content">
+                <h3>Resource Entry</h3>
+                <p>Administrator registers a new resource in the system.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-number">2</div>
+            <div class="timeline-content">
+                <h3>Classification</h3>
+                <p>Resource is categorized and assigned relevant details.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-number">3</div>
+            <div class="timeline-content">
+                <h3>Availability Activation</h3>
+                <p>The resource becomes visible for reservation requests.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="resource-best-practices" class="user-info-section">
+    <div class="section-header">
+        <span>BEST PRACTICES</span>
+        <h2>Effective Resource Management</h2>
+    </div>
+
+    <div class="user-info-card">
+        <ul>
+            <li>Keep resource details accurate and up to date.</li>
+            <li>Deactivate unavailable resources promptly.</li>
+            <li>Use consistent naming and categorization.</li>
+            <li>Review resource usage trends regularly.</li>
+        </ul>
+    </div>
+</section>
+
+    <footer>
+        © 2026 TechReserve. All rights reserved.
+    </footer>
+
+</main>
+
+</div>
+
+<script src="../js/docs_js/resource-center.js"></script>
+
+</body>
+</html>
